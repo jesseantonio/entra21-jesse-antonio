@@ -16,4 +16,11 @@ console.log(null == "\n0\n") // false
 console.log(null === +"\n0\n") // false
 
 Exercício 3
+let numero =  Number(prompt("Digite o número"))
+if (numero>10){
+alert("O valor A é maior que 10, Programa finalizado...")
+}
+else{
+alert("Programa finalizado...")
+}
 
