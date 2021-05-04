@@ -1,0 +1,102 @@
+       Exercício 1
+        let nome = "Jessé"
+        console.Log(`seu nome é ${nome}!`)
+
+        Exercício 2 
+        let cadastro = "1) Cadastrar funcionário"
+        let lista = "2) Listar funcionários"
+        let edita = "3) Editar funcionário"
+        let deletar = "4) Deletar funcionário"
+        let sair = "5) Sair"
+        console.log(`Cadastro de funcionários:\n${cadastro}\n${lista}\n${edita}\n${deletar}\n${sair}`)
+
+        Exercício 3 
+        let nome = "João"
+        let admin
+        admin = nome
+        console.log(nome)
+
+        Exercício 4
+        let nome = "Jessé"
+        let idade = "16"
+        let peso = "70"
+        let altura = "1,74"
+        let telefone = "91238-9122"
+        console.log(`MEUS DADOS\n${nome}\n${idade}\n${peso}\n${altura}\n${telefone}`)
+        
+        Exercício 5
+        let titulo = "A Costureira de Dachau"
+        let edicao = "Única"
+        let autor = "Mary Chamberlain" 
+        let dataDaPublicacao = "20 de março de 2015"
+        console.log(`MEU LIVRO\n${titulo}\n${edicao}\n${autor}\n${dataDaPublicacao}`)
+
+        Exercício 6 
+        let dataDeNascimento = "04/04/2004"
+        let qtdFilhos = "0"
+        let nomeUsuario = "Jessé"
+       
+        Exercício 7
+        console.log(`Olá ${1}`) // Mostra "Olá 1" no console
+        console.log(`Olá ${"nome"}`) // "Olá nome" no console
+        alert(`Olá ${nome}`) // Cria um alerta dizendo "Olá João"
+
+        Exercício 8
+        x * y) / 2 + 3 ** 4 // Mostra o número 121 no console
+
+        Exercício 9
+        4, 5
+
+        Exercício 10
+        a)10
+        b)-1
+        c)2
+        d)6
+        e)9px
+        f)$45
+        g)2
+
+        Exercício 11
+        let altura =  Number(prompt("Digite a altura"))
+        let largura = Number(prompt("Digite a largura"))
+        let perimetro = largura + altura
+        let area = largura * altura;
+        console.log(area)
+        console.log(perimetro)
+
+        Exercício 12
+        let num1 =  Number(prompt("Digite o primeiro número"))
+        let num2 = Number(prompt("Digite o segundo número"))
+        let resultado = num1 + num2
+        console.log(resultado)
+
+        Exercício 13
+        let nota1 =  Number(prompt("Digite a primeira nota /1a10"))
+        let nota2 = Number(prompt("Digite a primeira nota /1a10"))
+        let media = (nota1 + nota2) /2
+        alert(media)
+
+        Exercício 14
+        let num1 =  Number(prompt("Digite o primeiro número"))
+        let num2 = Number(prompt("Digite o segundo número"))
+        let num3 = Number(prompt("Digite o terceiro número"))
+        let resultado1 = num1 ** 2
+        let resultado2 = num2 ** 2
+        let resultado3 = num3 ** 2
+        alert(`RESULTADOS:\n${resultado1}\n${resultado2}\n${resultado3}`)
+
+        Exercício 15
+        let a = 2
+        let b = 4
+        console.log(a, b)
+        let aux = a
+        a = b
+        b = aux
+        console.log(a, b)
+
+        Exercício 16
+        let qtdMeses =  Number(prompt("Digite a quantidade de meses"))
+        let dias = 30 * qtdMeses
+        alert(`RESULTADOS:\n${dias}`)
+
+

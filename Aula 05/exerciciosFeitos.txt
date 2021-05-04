@@ -1,0 +1,34 @@
+Exercício 1
+let num1 =  Number(prompt("Digite um número"))
+let antecessor = num1 - 1
+let sucessor = num1 + 1
+alert(`RESULTADOS:\n${num1}\n${antecessor}\n${sucessor}`)
+
+Exercício 2
+let raio =  Number(prompt("Digite um número para o raio da sua esfera"))
+let resultado1 = raio ** 3
+let volume = 4 /3 * 3.14159 * resultado1
+alert(`RESULTADOS:\n${volume.toFixed(2)}`)
+
+Exercício 3
+let altura =  Number(prompt("Digite um número para a altura do seu triângulo"))
+let base =  Number(prompt("Digite um número para a base do seu triângulo"))
+let area = (base * altura) / 2
+alert(`RESULTADOS:\n${area}`)
+
+Exercício 4
+
+ let valor =  Number(prompt("Digite o valor do seu produto"))
+ let desconto =  Number(prompt("Digite o desconto de seu produto"))
+ let resultado = (valor / 100) * desconto
+ let valorComDesconto = valor - resultado
+ alert(`RESULTADOS:\n${valorComDesconto} \n${resultado}`)
+
+Exercício 5
+
+let nome =  String(prompt("Digite o nome do vendedor"))
+let salarioFixo =  Number(prompt("Digite o seu salário fixo"))
+let totalVendas =  Number(prompt("Digite o o total de vendas efetuadas no mês(em dinheiro)"))
+let comissao = (totalVendas / 100) * 15
+let salarioComComissao = salarioFixo + comissao
+alert(`RESULTADOS:\n${nome}\n${salarioComComissao.toFixed(2)}`)

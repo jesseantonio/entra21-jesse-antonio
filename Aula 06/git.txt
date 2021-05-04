@@ -1,0 +1,11 @@
+git init -> inicializar
+git add -> adiciona na área de stage
+git status -> verifica os arquivos na área de repositório
+git commit -m "mensagem" -> último passo para salvar o no repositório local
+git config --global user.name "nome" -> coloca o nome de forma global
+git config --global --list -> aparece o nome e email
+git log - mostra o log
+git restore --staged primeiro.html -> modifica
+git branch -M main
+git remote add origin https://github.com/jesseantonio/entra21-Jesse-Antonio.git
+git push
