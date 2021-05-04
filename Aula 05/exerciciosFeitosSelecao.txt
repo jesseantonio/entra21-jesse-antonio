@@ -9,7 +9,7 @@ console.log(10 > 2) // true
 console.log(5 >= "5") // true
 console.log(5 >== "5") // Uncaught SyntaxError: Unexpected token '='
 console.log("apple" > "pineapple") // false
-console.log("2" > "12") // true, 
+console.log("2" > "12") // true
 console.log(undefined == null) // true 
 console.log(undefined === null) // false
 console.log(null == "\n0\n") // false
@@ -24,3 +24,62 @@ else{
 alert("Programa finalizado...")
 }
 
+Exercício 4
+let numero =  Number(prompt("Digite o número"))
+if (numero%2==0){
+let metadeNumero = numero/2
+alert(`${metadeNumero}\nPrograma finalizando...`)
+}
+else {
+alert("Programa finalizado...")
+}
+
+Exercício 5
+ let numero = Number(prompt("Digite um número"))       
+if (numero%2==0){
+alert(`O numero é par`)
+}
+else{
+alert(`O numero é ímpar`)
+}
+
+Exercício 6
+let numero =  Number(prompt("Digite o número"))
+if (numero > 20){
+if (numero < 90){
+alert(`O número está na faixa entre 20 e 90`)
+}
+else{
+alert(`O número está fora da faixa`)
+}
+}       
+else{
+alert("O número está fora da faixa")
+}
+
+Exercício 7
+Boolean(A > 10 && B <= 20) // false
+Boolean(A > 10 || B <= 20) // true
+Boolean((A === 10 || B > 20) && B === 20) // true
+console.log(null || 2 || undefined) // 2
+Boolean(0 && 1) // false
+
+Exercício 8
+let valor1 =  Number(prompt("Digite o primeiro valor"))
+let valor2 =  Number(prompt("Digite o segundo valor"))
+let valor3 =  Number(prompt("Digite o terceiro valor"))
+if (valor1 > valor2 && valor1 > valor3) {
+alert(`${valor1}\n${valor2}\n${valor3}\nO maior valor é o:\n${valor1}`)
+} 
+else if (valor2 > valor1 && valor2 > valor3) {
+alert(`${valor1}\n${valor2}\n${valor3}\nO maior valor é o:\n${valor2}`)
+}
+else if (valor3 > valor1 && valor3 > valor2)
+alert(`${valor1}\n${valor2}\n${valor3}\nO maior valor é o:\n${valor3}`)
+
+Exercício 9
+let a =  Number(prompt("Digite o primeiro valor"))
+let b =  Number(prompt("Digite o segundo valor"))
+a + b > 10 ? alert("Abaixo") : alert("Acima")
+
+Exercício 10

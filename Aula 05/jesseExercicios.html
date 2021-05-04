@@ -7,9 +7,12 @@
 </head>
 <body>
     <script>
-        let numero =  Number(prompt("Digite o número")) 
-        
-        
+         let nome =  String(prompt("Digite o nome do vendedor"))
+let salarioFixo =  Number(prompt("Digite o seu salário fixo"))
+let totalVendas =  Number(prompt("Digite o o total de vendas efetuadas no mês(em dinheiro)"))
+let comissao = (totalVendas / 100) * 15
+let salarioComComissao = salarioFixo + comissao
+alert(`RESULTADOS:\n${nome}\n${salarioComComissao.toFixed(2)}`)
         
             
 
