@@ -7,15 +7,18 @@
 </head>
 <body>
     <script>
-         let nome =  String(prompt("Digite o nome do vendedor"))
-let salarioFixo =  Number(prompt("Digite o seu salário fixo"))
-let totalVendas =  Number(prompt("Digite o o total de vendas efetuadas no mês(em dinheiro)"))
-let comissao = (totalVendas / 100) * 15
-let salarioComComissao = salarioFixo + comissao
-alert(`RESULTADOS:\n${nome}\n${salarioComComissao.toFixed(2)}`)
-        
+         let numero =  Number(prompt("Digite o número"))
+         if (numero%2==0){
+let metadeNumero = numero/2
+alert(`${metadeNumero}\nPrograma finalizando...`)
+}
+else {
+alert("Programa finalizado...")
+}
             
 
     </script>
 </body>
 </html> 
+Desenvolva um programa que recebe do usuário o placar de um jogo de futebol (os gols de cada time) e 
+informe se o resultado foi um empate, a vitória do primeiro time ou do segundo time.

@@ -7,22 +7,31 @@
 </head>
 <body>
     <script>    
-        let lado1 =  Number(prompt("Digite o primeiro lado"))
-        let lado2 =  Number(prompt("Digite o segundo lado"))
-        let lado3 =  Number(prompt("Digite o segundo lado"))
-        if (equilatero) 
-        { lado1 = lado2 = lado3
+        let num1 =  Number(prompt("Informe seu número 1"))
+        let num2 =  Number(prompt("Informe seu número 2"))
+        let num3 =  Number(prompt("Informe seu número 3"))
+        if (num1 > num2 && num1 > num3 && num2 > num3 || num1 > num2 && num1 > num3 && num2 < num3) {
+            alert(`A sequência é\n${num1} \n${num2} \n${num3}`) 
+        } else if(num2 > num1 && num2 > num3 && num1 > num3) {
+            alert(`A sequência é\n${num2} \n${num3} \n${num1}`)
         }
-        else if (isosceles) { 
-            lado1 = lado2 }
-        
+        else{
+            alert(`A sequência é\n${num3} \n${num2} \n${num1}`)
+        }
 
     </script>
 </body>
 </html>
+Faça um script que leia três números e mostre-os em ordem decrescente.
 
-10) Escreva	um programa que	leia as	medidas	dos	lados de um	triângulo e	
-escreva	se ele é Equilátero, Isósceles ou Escaleno.	Sendo que:	
-− Triângulo	Equilátero:	possui os 3 lados iguais.	
-− Triângulo	Isósceles: possui 2	lados iguais.	
-− Triângulo	Escaleno: possui 3 lados diferentes.
+        let num1 =  Number(prompt("Informe seu número 1"))
+        let num2 =  Number(prompt("Informe seu número 2"))
+        let num3 =  Number(prompt("Informe seu número 3"))
+        if (num1 > num2 && num1 > num3 && num2 > num3)
+        {
+         alert(`A sequência é\n${num3} \n${num2} \n${num1}`)   
+        } else if(num2 > num1 && num2 > num3 && num1 > num3) {
+            alert(alert(`A sequência é\n${num3} \n${num2} \n${num1}`)
+        
+        
+        
