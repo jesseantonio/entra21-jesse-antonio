@@ -1,0 +1,283 @@
+Exercício 1
+console.log(!10) // false, 
+console.log(!!"String") // true, 
+console.log(!!2.3) // true, 
+console.log(Boolean(null)) // false, 
+
+Exercício 2
+console.log(10 > 2) // true
+console.log(5 >= "5") // true
+console.log(5 >== "5") // Uncaught SyntaxError: Unexpected token '='
+console.log("apple" > "pineapple") // false
+console.log("2" > "12") // true
+console.log(undefined == null) // true 
+console.log(undefined === null) // false
+console.log(null == "\n0\n") // false
+console.log(null === +"\n0\n") // false
+
+Exercício 3
+let numero =  Number(prompt("Digite o número"))
+if (numero > 10){
+alert(`O valor ${numero} é maior que 10 \nPrograma finalizado...`)
+}
+else{
+alert("Programa finalizado...")
+}
+
+Exercício 4
+let numero =  Number(prompt("Digite o número"))
+if (numero%2==0){
+let metadeNumero = numero /2
+alert(`${metadeNumero}\nPrograma finalizando...`)
+}
+else {
+alert("Programa finalizado...")
+}
+
+Exercício 5
+ let numero = Number(prompt("Digite um número"))       
+if (numero%2==0){
+alert(`O numero é par`)
+}
+else{
+alert(`O numero é ímpar`)
+}
+
+Exercício 6
+let numero =  Number(prompt("Digite o número"))
+if (numero > 20){
+if (numero < 90){
+alert(`O número está na faixa entre 20 e 90`)
+}
+else{
+alert(`O número está fora da faixa`)
+}
+}       
+else{
+alert("O número está fora da faixa")
+}
+
+Exercício 7
+Boolean(A > 10 && B <= 20) // false
+Boolean(A > 10 || B <= 20) // true
+Boolean((A === 10 || B > 20) && B === 20) // true
+console.log(null || 2 || undefined) // 2
+Boolean(0 && 1) // false
+
+Exercício 8
+let valor1 =  Number(prompt("Digite o primeiro valor"))
+let valor2 =  Number(prompt("Digite o segundo valor"))
+let valor3 =  Number(prompt("Digite o terceiro valor"))
+if (valor1 > valor2 && valor1 > valor3) {
+alert(`${valor1}\n${valor2}\n${valor3}\nO maior valor é o:\n${valor1}`)
+} 
+else if (valor2 > valor1 && valor2 > valor3) {
+alert(`${valor1}\n${valor2}\n${valor3}\nO maior valor é o:\n${valor2}`)
+}
+else if (valor3 > valor1 && valor3 > valor2)
+alert(`${valor1}\n${valor2}\n${valor3}\nO maior valor é o:\n${valor3}`)
+
+Exercício 9
+let a =  Number(prompt("Digite o primeiro valor"))
+let b =  Number(prompt("Digite o segundo valor"))
+a + b > 10 ? alert("Acima") : alert("Abaixo")
+
+Exercício 10
+let lado1 =  Number(prompt("Digite o primeiro lado"))
+let lado2 =  Number(prompt("Digite o segundo lado"))
+let lado3 =  Number(prompt("Digite o terceiro lado"))
+if (lado1 == lado2 && lado2 == lado3 && lado1 == lado3) 
+{ 
+alert(`O seu triângulo com os lados\n${lado1}\n${lado2}\n${lado3}\n É UM EQUILATERO`)
+}
+else if (lado1 == lado2 && lado3 != lado1 || lado2 == lado1 && lado3 != lado2 || lado3 == lado2 && lado1 != lado3 || 
+lado1 == lado3 && lado1 != lado2 || lado3 == lado1 && lado3 != lado2) { 
+alert(`O seu triângulo com os lados\n${lado1}\n${lado2}\n${lado3}\n É UM ISOSCELES`)
+}
+else{
+alert(`O seu triângulo com os lados\n${lado1}\n${lado2}\n${lado3}\n É UM ESCALENO`)
+}
+
+Exercício 11
+let numero =  Number(prompt("Digite um número"))
+if (numero > 0) {
+let raiz = numero ** 2
+alert(`A raíz é\n${raiz}`)    
+} else {
+alert(`Número inválido`)
+}
+
+Exercício 12
+let numero =  Number(prompt("Digite um número"))
+if (numero%5==0 ) {
+alert(`O número é divisível por 5`)    
+} else {
+alert(`Não é divisível`)
+}
+
+Exercício 13
+let numero =  Number(prompt("Digite um número"))
+if (numero >= 0 ) {
+let raiz = Math.sqrt(numero)
+alert(`A raíz é\n${raiz}`)
+} else {
+potenciacao = numero ** 2
+alert(`O seu número ao quadrado é\n${potenciacao}`)
+}
+
+Exercício 14
+let salario =  Number(prompt("Digite o salário do trabalhador"))
+let prestacao =  Number(prompt("Digite a prestação do empréstimo"))
+let porcentoSalario = (salario / 100) * 20
+if (prestacao > porcentoSalario) {
+alert(`Empréstimo não concedido`)
+} else {
+alert(`Empréstimo concedido`)
+}
+
+Exercício 15
+let numero =  Number(prompt("Digite um número"))
+switch (numero) {
+    case numero = 1:
+    alert(`Domingo`)
+    break;
+    case numero = 2:
+    alert(`Segunda-Feira`)
+    break;
+    case numero = 3:
+    alert(`Terça-Feira`)
+    break;
+    case numero = 4:
+    alert(`Quarta-Feira`)
+    break;
+    case numero = 5:
+    alert(`Quinta-Feira`)
+    break;
+    case numero = 6:
+    alert(`Sexta-Feira`)
+    break;
+    case numero = 7:
+    alert(`Sábado`)
+    break;
+    default:
+    alert(`Número não correspondente a um dia da semana`)
+    break;
+
+Exercício 16
+let numero =  Number(prompt("Digite um número"))
+switch (numero) {
+    case = 1:
+    alert(`Janeiro`)
+    break;
+    case = 2:
+    alert(`Fevereiro`)
+    break;
+    case = 3:
+    alert(`Março`)
+    break;
+    case = 4:
+    alert(`Abril`)
+    break;
+    case = 5:
+    alert(`Maio`)
+    break;
+    case = 6:
+    alert(`Junho`)
+    break;
+    case = 7:
+    alert(`Julho`)
+    break;
+    case = 8:
+    alert(`Agosto`)
+    break;
+    case = 9:
+    alert(`Setembro`)
+    break;
+    case = 10:
+    alert(`Outubro`)
+    break;
+    case = 11:
+    alert(`Novembro`)
+    break;
+    case = 12:
+    alert(`Dezembro`)
+    break;
+    default:
+    alert(`Número não correspondente a um dia da semana`)
+    break;
+
+Exercício 17
+let golsTime1 =  Number(prompt("Digite os gols do primeiro time"))
+let golsTime2 =  Number(prompt("Digite os gols do segundo time"))
+if (golsTime1 > golsTime2) {
+alert(`Vitória do time 1`)
+} else if (golsTime2 > golsTime1){
+alert(`Vitória do time 2`)
+} else{
+alert(`Empate`)
+}
+
+Exercício 18
+let idade =  Number(prompt("Informe sua idade"))
+if (idade > 70) {
+alert(`Voto opcional`)
+} else if (idade < 18){
+alert(`Não precisa votar`)
+} else{
+alert(`Voto obrigatório`)
+}
+
+Exercício 19
+    let num1 =  Number(prompt("Informe seu número 1"))
+    let num2 =  Number(prompt("Informe seu número 2"))
+    let num3 =  Number(prompt("Informe seu número 3"))
+if (num1 >= num2 && num1 >= num3) 
+    {
+    if (num2 >= num3) {
+         alert(`A sequência é\n${num1} \n${num2} \n${num3}`)     
+        } else {
+            alert(`A sequência é\n${num1} \n${num3} \n${num2}`) 
+        }
+        }
+else if (num2 >= num1 && num2 >= num3) 
+       {
+        if (num1 >= num3) {
+            alert(`A sequência é\n${num2} \n${num1} \n${num3}`) 
+        } else {
+            alert(`A sequência é\n${num2} \n${num3} \n${num1}`) 
+        }
+       }
+else{
+            if (num2 >= num1 ) {
+                alert(`A sequência é\n${num3} \n${num2} \n${num1}`) 
+            }
+            else{
+                alert(`A sequência é\n${num3} \n${num1} \n${num2}`) 
+            }
+        }
+
+Exercício 20
+let idade =  Number(prompt("Informe sua idade"))
+if (idade >= 18 && idade <= 67) {
+alert(`Pode doar sangue`)
+} else {
+alert(`Não pode doar sangue`)
+}
+
+Exercício 21
+let turno =  (prompt("Informe seu turno M/V/N"))
+switch (turno) {
+        case turno = "M":
+        alert(`Bom dia!`)
+            break;
+            case turno = "V":
+        alert(`Boa tarde!`)
+            break;
+            case turno = "N":
+        alert(`Boa noite!`)
+            break;
+        default:   
+        alert(`Valor Inválido!`)
+            break;
+    }
+    
