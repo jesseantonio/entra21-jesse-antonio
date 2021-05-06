@@ -1,4 +1,4 @@
-1) Qual é a saída dos seguintes comandos
+    1) Qual é a saída dos seguintes comandos
 console.log(!10) // ?
 console.log(!!"String") // ?
 console.log(!!2.3) // ?

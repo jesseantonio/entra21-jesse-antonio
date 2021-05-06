@@ -17,7 +17,7 @@ console.log(null === +"\n0\n") // false
 
 Exercício 3
 let numero =  Number(prompt("Digite o número"))
-if (numero>10){
+if (numero > 10){
 alert("O valor A é maior que 10, Programa finalizado...")
 }
 else{
@@ -27,7 +27,7 @@ alert("Programa finalizado...")
 Exercício 4
 let numero =  Number(prompt("Digite o número"))
 if (numero%2==0){
-let metadeNumero = numero/2
+let metadeNumero = numero /2
 alert(`${metadeNumero}\nPrograma finalizando...`)
 }
 else {
@@ -80,7 +80,7 @@ alert(`${valor1}\n${valor2}\n${valor3}\nO maior valor é o:\n${valor3}`)
 Exercício 9
 let a =  Number(prompt("Digite o primeiro valor"))
 let b =  Number(prompt("Digite o segundo valor"))
-a + b > 10 ? alert("Abaixo") : alert("Acima")
+a + b > 10 ? alert("Acima") : alert("Abaixo")
 
 Exercício 10
 let lado1 =  Number(prompt("Digite o primeiro lado"))
@@ -166,45 +166,46 @@ switch (numero) {
 Exercício 16
 let numero =  Number(prompt("Digite um número"))
 switch (numero) {
-    case numero = 1:
+    case = 1:
     alert(`Janeiro`)
     break;
-    case numero = 2:
+    case = 2:
     alert(`Fevereiro`)
     break;
-    case numero = 3:
+    case = 3:
     alert(`Março`)
     break;
-    case numero = 4:
+    case = 4:
     alert(`Abril`)
     break;
-    case numero = 5:
+    case = 5:
     alert(`Maio`)
     break;
-    case numero = 6:
+    case = 6:
     alert(`Junho`)
     break;
-    case numero = 7:
+    case = 7:
     alert(`Julho`)
     break;
-    case numero = 8:
+    case = 8:
     alert(`Agosto`)
     break;
-    case numero = 9:
+    case = 9:
     alert(`Setembro`)
     break;
-    case numero = 10:
+    case = 10:
     alert(`Outubro`)
     break;
-    case numero = 11:
+    case = 11:
     alert(`Novembro`)
     break;
-    case numero = 12:
+    case = 12:
     alert(`Dezembro`)
     break;
     default:
     alert(`Número não correspondente a um dia da semana`)
     break;
+
 Exercício 17
 let golsTime1 =  Number(prompt("Digite os gols do primeiro time"))
 let golsTime2 =  Number(prompt("Digite os gols do segundo time"))
@@ -227,3 +228,56 @@ alert(`Voto obrigatório`)
 }
 
 Exercício 19
+    let num1 =  Number(prompt("Informe seu número 1"))
+    let num2 =  Number(prompt("Informe seu número 2"))
+    let num3 =  Number(prompt("Informe seu número 3"))
+if (num1 >= num2 && num1 >= num3) 
+    {
+    if (num2 >= num3) {
+         alert(`A sequência é\n${num1} \n${num2} \n${num3}`)     
+        } else {
+            alert(`A sequência é\n${num1} \n${num3} \n${num2}`) 
+        }
+        }
+else if (num2 >= num1 && num2 >= num3) 
+       {
+        if (num1 >= num3) {
+            alert(`A sequência é\n${num2} \n${num1} \n${num3}`) 
+        } else {
+            alert(`A sequência é\n${num2} \n${num3} \n${num1}`) 
+        }
+       }
+else{
+            if (num2 >= num1 ) {
+                alert(`A sequência é\n${num3} \n${num2} \n${num1}`) 
+            }
+            else{
+                alert(`A sequência é\n${num3} \n${num1} \n${num2}`) 
+            }
+        }
+
+Exercício 20
+let idade =  Number(prompt("Informe sua idade"))
+if (idade >= 18 && idade <= 67) {
+alert(`Pode doar sangue`)
+} else {
+alert(`Não pode doar sangue`)
+}
+
+Exercício 21
+let turno =  (prompt("Informe seu turno M/V/N"))
+switch (turno) {
+        case turno = "M":
+        alert(`Bom dia!`)
+            break;
+            case turno = "V":
+        alert(`Boa tarde!`)
+            break;
+            case turno = "N":
+        alert(`Boa noite!`)
+            break;
+        default:   
+        alert(`Valor Inválido!`)
+            break;
+    }
+    
