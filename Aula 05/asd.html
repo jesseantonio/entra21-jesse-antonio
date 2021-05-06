@@ -7,9 +7,13 @@
 </head>
 <body>
     <script>    
-        let a =  Number(prompt("Digite o primeiro valor"))
-        let b =  Number(prompt("Digite o segundo valor"))
-        a + b > 10 ? alert("Acima") : alert("Abaixo")
+        let numero =  Number(prompt("Digite um número"))
+if (numero > 0) {
+let raiz = Math.sqrt(numero)
+alert(`A raíz é\n${raiz}`)    
+} else {
+alert(`Número inválido`)
+}
     
     
     </script>

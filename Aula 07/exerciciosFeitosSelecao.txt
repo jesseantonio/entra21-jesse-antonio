@@ -101,7 +101,7 @@ alert(`O seu triângulo com os lados\n${lado1}\n${lado2}\n${lado3}\n É UM ESCAL
 Exercício 11
 let numero =  Number(prompt("Digite um número"))
 if (numero > 0) {
-let raiz = numero ** 2
+let raiz = Math.sqrt(numero)
 alert(`A raíz é\n${raiz}`)    
 } else {
 alert(`Número inválido`)
