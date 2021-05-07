@@ -7,14 +7,15 @@
 </head>
 <body>
     <script>    
-        let numero =  Number(prompt("Digite um número"))
-if (numero > 0) {
-let raiz = Math.sqrt(numero)
-alert(`A raíz é\n${raiz}`)    
-} else {
-alert(`Número inválido`)
+        let golsTime1 =  Number(prompt("Digite os gols do primeiro time"))
+let golsTime2 =  Number(prompt("Digite os gols do segundo time"))
+if (golsTime1 > golsTime2) {
+alert(`Vitória do time 1`)
+} else if (golsTime2 > golsTime1){
+alert(`Vitória do time 2`)
+} else{
+alert(`Empate`)
 }
-    
     
     </script>
 </body>
