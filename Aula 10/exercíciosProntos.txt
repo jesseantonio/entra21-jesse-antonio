@@ -89,5 +89,44 @@ Exercício 8
     }
 
 Exercício 9
+    let numeroNegativo = 0
+    for (let i = 0; i <= 4;i++) {
+    let numero = Number(prompt("Digite um número"))
+    if (numero < 0) {
+    numeroNegativo++
+    }
+    console.log(`Há ${numeroNegativo} numeros negativos.`)
+    }
 
+Exercício 10
+    let numerosImpares = 0
+    let numerosPares = 0
+    for (let i = 0; i <= 9;i++) {
+    let numero = Number(prompt("Digite um número"))
+    if (numero %2== 0) {
+    numerosPares++
+    }
+    else if (numero %2!== 0) {
+    numerosImpares++  
+    }
+    console.log(`Números pares${numerosPares}\nNúmero impares ${numerosImpares}`)
+    }
+
+Exercício 11
+    let numerosForaIntervalo = 0
+    let numerosDentroIntervalo = 0
+    for (let i = 0; i >= 0; i < 0) {
+    let numero = Number(prompt("Digite um número"))
+    if (numero >= 10 && numero <= 20 ) {
+    numerosDentroIntervalo++
+    }
+    else{
+    numerosForaIntervalo++
+    }
+    console.log(`Números dentro do intervalo ${numerosDentroIntervalo}\nNúmero fora do intervalo ${numerosForaIntervalo}`)
+    }
+
+Exercício 12
+    
+        
 
