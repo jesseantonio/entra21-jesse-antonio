@@ -103,10 +103,10 @@ Exercício 10
     let numerosPares = 0
     for (let i = 0; i <= 9;i++) {
     let numero = Number(prompt("Digite um número"))
-    if (numero %2== 0) {
+    if (numero % 2 == 0) {
     numerosPares++
     }
-    else if (numero %2!== 0) {
+    else {
     numerosImpares++  
     }
     console.log(`Números pares${numerosPares}\nNúmero impares ${numerosImpares}`)

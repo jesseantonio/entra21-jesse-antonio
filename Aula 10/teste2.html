@@ -8,17 +8,18 @@
 </head>
 <body>
     <script>
-            let numerosParaMedia = 0
-            let contador = 0
-            for (let i = 0; i >= 0; i < 0) {
-            let numero = +prompt("Digite um número")
-            if (numero < 0) {
-                break
-            }
-            numerosParaMedia += numero
-            contador++
-            }
-            console.log(`Média aritmetica ${numerosParaMedia / contador}`)
+    let numerosImpares = 0
+    let numerosPares = 0
+    for (let i = 0; i <= 9;i++) {
+    let numero = Number(prompt("Digite um número"))
+    if (numero %2== 0) {
+    numerosPares++
+    }
+    else {
+    numerosImpares++  
+    }
+    console.log(`Números pares${numerosPares}\nNúmero impares ${numerosImpares}`)
+    }
 
         
     </script>
