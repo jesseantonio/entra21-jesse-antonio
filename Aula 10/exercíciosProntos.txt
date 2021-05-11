@@ -109,7 +109,7 @@ Exercício 10
     else {
     numerosImpares++  
     }
-    console.log(`Números pares${numerosPares}\nNúmero impares ${numerosImpares}`)
+    console.log(`Números pares: ${numerosPares}\nNúmero impares: ${numerosImpares}`)
     }
 
 Exercício 11
@@ -141,3 +141,10 @@ Exercício 12
 
         
 
+16) Crie um script que leia 5 valores e mostre qual o maior e o menor valor lido.
+Entrada:              Saída:
+-1                    O menor valor digitado foi -1
+0                     O maior valor digitado foi 9
+9
+2
+3

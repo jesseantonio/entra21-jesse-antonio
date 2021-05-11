@@ -8,30 +8,32 @@
 </head>
 <body>
     <script>
-    let numerosImpares = 0
-    let numerosPares = 0
-    for (let i = 0; i <= 9;i++) {
-    let numero = Number(prompt("Digite um número"))
-    if (numero %2== 0) {
-    numerosPares++
+    let numeros = 0
+    let numeroMaior = 0
+    let numeroMenor = 0
+    for (let i = 0; i < 2; i++) {
+    let numero = +prompt("Digite um número")
+    numeros += numero
+    if (numeroMaior > numeros) {
+    numeroMenor++
     }
     else {
-    numerosImpares++  
+        numeroMaior++
     }
-    console.log(`Números pares${numerosPares}\nNúmero impares ${numerosImpares}`)
     }
-
+    console.log(` Menor número: ${numeroMenor} Maior número: ${numeroMaior}`)
         
     </script>
 </body>
 </html>
-12) Construa um programa que leia vários valores númericos enquanto um valor negativo não for digitado. Após isso,
-mostre a média aritmética dos valores recebidos.
-Entrada:                Saída:
-3                       6
-5
-10
--1
+Faça um programa que receba dois numeros. Calcule e mostre:
+• a soma dos numeros pares desse intervalo de números, incluindo os números digitados;
+• a multiplicaçao dos números ímpares desse intervalo, incluindo os números digitados;
+Entrada:            Saída:
+1                   Soma dos pares: 30
+10                  Multiplicação dos ímpares: 945
 
-
-
+let numero = Number(prompt("Digite um número"))
+    for (let i = 1; i <=10;i++) {
+    console.log(`${numero} * ${i} = ${numero*i}`)
+    }
