@@ -127,6 +127,17 @@ Exercício 11
     }
 
 Exercício 12
-    
+    let numerosParaMedia = 0
+    let contador = 0
+    for (let i = 0; i >= 0; i < 0) {
+    let numero = +prompt("Digite um número")
+    if (numero < 0) {
+    break
+    }
+    numerosParaMedia += numero
+    contador++
+    }
+    console.log(`Média aritmetica ${numerosParaMedia / contador}`)
+
         
 

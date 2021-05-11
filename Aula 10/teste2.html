@@ -8,18 +8,18 @@
 </head>
 <body>
     <script>
-            let numerosForaIntervalo = 0
-            let numerosDentroIntervalo = 0
+            let numerosParaMedia = 0
+            let contador = 0
             for (let i = 0; i >= 0; i < 0) {
-            let numero = Number(prompt("Digite um número"))
-            if (numero >= 10 && numero <= 20 ) {
-            numerosDentroIntervalo++
+            let numero = +prompt("Digite um número")
+            if (numero < 0) {
+                break
             }
-            else{
-            numerosForaIntervalo++
+            numerosParaMedia += numero
+            contador++
             }
-            console.log(`Números dentro do intervalo ${numerosDentroIntervalo}\nNúmero fora do intervalo ${numerosForaIntervalo}`)
-            }
+            console.log(`Média aritmetica ${numerosParaMedia / contador}`)
+
         
     </script>
 </body>
@@ -34,9 +34,3 @@ Entrada:                Saída:
 
 
 
-let numerosParaMedia = 0
-for (let i = 0; i >= 0; i < 0) {
-let numero = Number(prompt("Digite um número"))
-numerosParaMedia += numero
-}
-console.log(`Média aritmetica ${numerosParaMedia / i}`)
