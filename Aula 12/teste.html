@@ -7,13 +7,33 @@
 </head>
 <body>
     <script>
-        let vetor = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        for (let i = 0; i < 10; i++) {
-           vetor[i] = vetor %2 == 0 ;
-            console.log(vetor[i])
-        }
-    
+    let vetor = []
+    let x,
+        y
+        
+    while (contadoraPares < 6) {
+    let numero = +prompt("Digite um número")
+    if (numero % 2 != 0) {
+        console.log("Contém número ímpar")
+        continue
+    }
+    numeros[contadoraPares] = numero
+    contadoraPares++
+    }    
+    for (let i = numeros.length - 1; i >= 0; i--) {
+        console.log(numeros[i])
+    }
+        
+        
+        
+
+        
     </script>
 </body>
 </html>
-1) Leia um vetor de 10 posicões. Calcule e escreva quantos valores pares ele possui.
+Faça um programa que leia um vetor de 8 posições e, em seguida, leia também dois
+valores X e Y quaisquer correspondentes a duas posições no vetor. Ao final seu programa
+deverá escrever a soma dos valores encontrados nas respectivas posições X e Y. Se o usuário
+digitar valores inválidas para X ou Y mostre uma mensagem de erro e peça novos valores até 
+que ambos os valores sejam válidos.
+

@@ -1,0 +1,115 @@
+Exercício 1 
+    let pares = 0
+    let vetor = []
+    for (let i = 0; i < 10; i++) {
+    vetor[i] = +prompt(`Digite ${i + 1} º valor`)
+        
+    if (vetor[i]  % 2 === 0)  
+    pares++
+
+    }
+    console.log(`Aqui estão os números pares ${pares}`)
+
+Exercício 2
+    let vetor = [],
+    maiorElemento,
+    posicao
+    for (let i = 0; i < 5; i++) {
+    let numero = +prompt(`Digite ${i + 1} º valor`)
+    vetor[i] = numero
+    if (i === 0) {
+    maiorElemento = vetor[i]
+    posicao = i
+    }
+    else if (vetor[i] > maiorElemento) {
+    maiorElemento = vetor[i]
+    posicao = i
+    }
+    }
+    console.log(`${vetor} e o maior é ${maiorElemento} e se encontra na ${posicao}`)
+
+Exercício 3
+    let vetor = [],
+    maiorElemento,
+    menorElemento
+    for (let i = 0; i < 5; i++) {
+    let numero = +prompt(`Digite ${i + 1} º valor`)    
+    vetor[i] = numero
+    if (i === 0) {
+    maiorElemento = vetor[i]
+    menorElemento = vetor[i]
+    }
+    else if (vetor[i] > maiorElemento) {
+    maiorElemento = vetor[i] 
+    }
+    else if (vetor[i] < menorElemento) {
+    maiorElemento = vetor[i]
+    }   
+    } 
+    console.log(`${vetor.join(", ")}\nO maior é o: ${maiorElemento}\nO menor é o: ${menorElemento}`)
+
+Exercício 4
+    let vetor = [], 
+    vetor2 = []
+    for (let i = 0; i < 5; i++) {
+    let numero = +prompt(`Digite ${i + 1} º valor`)
+    vetor[i] = numero
+    }
+    let tamanhoVetor = vetor.length - 1
+    for (let x = tamanhoVetor; x >= 0; x--) {
+    vetor2[x] = vetor[tamanhoVetor - x] 
+    }
+    console.log(`${vetor.join(", ")}\n${vetor2.join(", ")}`)
+
+Exercício 5
+    let nomes = []
+    for (let i = 0; i < 5; i++) {
+    let nome = prompt(`Digite ${i + 1} º nome`)    
+    nomes[i] = nome
+    }   
+    let Procurar = prompt(`Qual nome você quer procurar?`)   
+    let achei
+    for (let nome of nomes) {
+    if (nome == Procurar) {
+    achei = true
+    break
+    } 
+    }
+    achei ? console.log("ACHEI") : console.log("NÃO ACHEI")
+
+Exercício 6
+    let a = [1, 0, 5, -2, -5, 7]
+    let soma = a[0] + a[1] + a[5]
+    console.log(soma)
+    a[4] = 100
+    for (let numero of a) {
+        console.log(numero)
+    }
+
+Exercício 7
+    let numeros = []
+    let vetor2 = []
+    for (let i = 0; i < 5; i++) {
+    let numero = prompt(`Digite ${i + 1} º número`)    
+    numeros[i] = numero
+    }   
+    vetor2 = numeros
+    for (let n of vetor2) {
+        console.log(n ** 2)
+    }
+
+Exercício 8
+    while (contadoraPares < 6) {
+    let numero = +prompt("Digite um número")
+    if (numero % 2 != 0) {
+        console.log("Contém número ímpar")
+        continue
+    }
+    numeros[contadoraPares] = numero
+    contadoraPares++
+    }    
+    for (let i = numeros.length - 1; i >= 0; i--) {
+        console.log(numeros[i])
+    }
+
+Exercício 9
