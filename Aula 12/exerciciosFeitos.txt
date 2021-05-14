@@ -215,6 +215,198 @@ Exercício 12
     console.log(`A quantidade de "6" é: ${n6}`)
 
 Exercício 13
+    let armazenador = []
+    let maiorNota = 0
+    let soma = 0
     
+    while (true) {
+    nota = +prompt("Digite um número")
+    if (nota < 0) {
+        break
+    }
+    armazenador.push(nota)
+    }
+    for(let elemento of armazenador){
+        soma += elemento
+        if (elemento > maiorNota) {
+            maiorNota = elemento
+        }
+    }
+        let media = soma / armazenador.length
+        console.log(`A média geral da turma é: ${media.toFixed(2)}\nE a maior nota é: ${maiorNota}`)
+
+Exercício 14
+        let vetor1 = []
+        let vetor2 = []
+
+        for (let x = 0; x<5 ; x++){
+            let numero = prompt("Digite um número")
+            vetor1[x] = numero
+        }
+        for (let y = 0; y<5 ; y++){
+            numero = prompt("Digite um número")
+            vetor2[y] = numero
+        }
+        let igual = true
+        for (let x = 0; x<5 ; x++){
+            if (vetor1[x] !== vetor2[x]){
+                igual = false
+                break
+            }
+        }
+        igual ? console.log("Os valores são iguais") : console.log("Os valores são diferentes")
+    
+Exercício 15
+        let vetor1 = []
+        let vetor2 = []
+        for (let x = 0; x<5 ; x++){
+            numero = +prompt(`Digite ${x + 1} º número`) 
+            vetor1[x] = numero
+        }
+        for (let y = 0; y<5 ; y++){
+            numero = +prompt(`Digite ${y + 1} º número`) 
+            vetor2[y] = numero
+        }
+        let interseccao = []
+        for (let x = 0; x<5 ; x++){
+        for (let y = 0;y<5;y++){
+        if (vetor1[x] == vetor2[y]){
+            interseccao.push(vetor1[x])
+            break
+        }
+    }
+}
+console.log(`Vetor 1: ${vetor1.join(", ")}\nVetor 2: ${vetor2.join(", ")}\nHá uma intersecção em: ${interseccao.join(", ")}`)
+
+Exercício 16
+        let num1 = +prompt("Informe o primeiro valor")
+        let num2 = +prompt("Informe o segundo valor")
+        let menorNum = 0
+        let maiorNum = 0
+        
+        if (num1>num2){
+            menorNum = num1 
+            maiorNum = num2
+        }
+        else{
+            menorNum = num2
+            maiorNum = num1
+        }
+        
+        let contador = 0 
+        let vetor1 = [] 
+        for (let x = maiorNum; x<=menorNum ; x++){
+            if (contador%2==0){
+                vetor1.push(x)
+                contador++
+            }
+            else{
+                contador++
+            }
+        }
+        for (let elemento of vetor1){
+            console.log(elemento)
+        }
+
+Exercício 17
+        vetor = []
+        for (let x = 0; x<10 ; x++){
+        let numero = Math.round((Math.random(1,1000)*(1000-1))+1)
+        vetor[x] = numero
+        }
+        let guardar = 0
+        for (let x = 0; x<10 ; x++){
+        for (let y = 0; y<10 ; y++){
+        if (vetor[y]>vetor[x]){
+        guardar = vetor[y]
+        vetor[y] = vetor[x]
+        vetor[x] = guardar
+                              }
+        }}
+        console.log(vetor)
+    
+Exercício 18
+        vetor = []
+        for (let x = 0; x<10 ; x++){
+        let numero = Math.floor((Math.random(1,10)*(10-1))+1)
+        vetor[x] = numero
+        }
+        let soma = 0
+        let multiplicacao = 1
+        for (let elemento of vetor){
+            if (elemento % 2 == 0){
+                soma += elemento
+            }
+            else{
+                multiplicacao *= elemento
+            }
+        }
+        console.log(`O vetor é: ${vetor.join(", ")}`)
+        console.log(`A soma dos pares é: ${soma}`)
+        console.log(`A multiplicação dos ímpares é: ${multiplicacao}`)
+    
+Exercício 19
+        let texto = "Sem trocar que o espinho é seco.\nSem trocar que seco é ser sol.\nSem trocar que algum espinho seco secará."  
+        let vetor = texto.split(" ")
+        console.log(texto)
+        for(let i = 0; i < vetor.length; i++){
+            if(vetor[i] === "trocar")
+            vetor[i] = "sacar"
+        }
+        texto = vetor.join(" ")
+        console.log(texto)
+
+Exercício 20
+        let vetor = []
+        for(i = 0; i < 10; i++){
+        let nota = +prompt(`Digite ${i + 1} ª nota`)    
+        vetor[i] = nota
+    }
+        let soma = 0
+        for (let elemento of vetor) {
+        soma += elemento
+    }
+        let acimaMedia = []
+        let media = soma / (vetor.length)
+        for (let i = 0; i < 10;i++){
+            if (vetor[i] > media){
+                acimaMedia.push(vetor[i])
+            }
+        }
+        
+        console.log(`A média da sala é de ${media.toFixed(2)}\nE as notas acima da média: ${acimaMedia.join(", ").length > 0 ? acimaMedia:"Não possui"}`)
+    </script>
+
+Exercício 21
+let vetorproduto = []
+        let vetorpreco = []
+        for (let i = 0;i<5;i++){
+            let produto = prompt(`Me dê o nome do produto ${i+1}`)
+            let preco = +prompt(`Me dê o preço do produto ${i+1}`)
+            vetorproduto[i] = produto
+            vetorpreco[i] = preco
+        }
+        let quantPrecInferior = 0
+        let nomeProdutosMargem = []
+        let somaPrecSuperior = 0
+        let quantPrecSuperior = 0
+        for (let i = 0;i<5;i++){
+            if (vetorpreco[i] < 50){
+                quantPrecInferior++
+            }
+            else if(vetorpreco[i] <= 100){
+                nomeProdutosMargem.push(vetorproduto[i])
+            }
+            else{
+                somaPrecSuperior+=vetorpreco[i]
+                quantPrecSuperior++
+            }
+        }
+        let mediaSuperior = somaPrecSuperior/quantPrecSuperior
+        console.log(`A quantidade de produtos com preço inferior a R$ 50,00 é ${quantPrecInferior}`)
+        console.log(`Nome dos produtos com preço entre R$50,00 e R$100: ${nomeProdutosMargem}`)
+        console.log(`A média dos produtos com preço superior a R$ 100,00 é ${mediaSuperior.toFixed(2)}`)
+
+
 
 

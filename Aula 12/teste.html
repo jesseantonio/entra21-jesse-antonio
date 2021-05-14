@@ -7,33 +7,76 @@
 </head>
 <body>
     <script>
-    let nota = 0
-    let armazenador = []
-    
-    nota = +prompt("Digite um número")
-    while (nota = true) {
-    nota++
-    continue
+        let vetor = []
+        for(i = 0; i < 10; i++){
+        let nota = +prompt(`Digite ${i + 1} ª nota`)    
+        vetor[i] = nota
     }
-    
-    
-    while(false){
-        break
+        let soma = 0
+    for (let elemento of vetor) {
+        soma += elemento
     }
-    
-    
-    
-
+        let acimaMedia = []
+        let media = soma / (vetor.length)
+        for (let i = 0; i < 10;i++){
+            if (vetor[i] > media){
+                acimaMedia.push(vetor[i])
+            }
+        }
+        
+        console.log(`A média da sala é de ${media.toFixed(2)}\nE as notas acima da média: ${acimaMedia.join(", ").length > 0 ? acimaMedia:"Não possui"}`)
     </script>
+
+
 </body>
 </html>
-13) Faça um programa para ler a nota da prova de alunos e armazene num vetor, calcule e
-mostre a média geral da turma e também a maior nota da turma. O programa deve parar de armazenar
-as notas quando uma nota negativa for digitada.
-Entrada:             Saída:
-10                   Média da turma: 9.20
-9                    Maior nota: 10.00
-9
-9
-9
--1
+21) Faça um script que receba o nome de cinco produtos e seus respectivos preços, armazene­-os em dois vetores separados, 
+um para os produtos e outro para os preços. O programa deve calcular e mostrar:
+a) A quantidade de produtos com preço inferior a R$ 50,00;
+b) O nome dos produtos com preço entre R$ 50,00 e R$ 100,00;
+c) A média dos preços dos produtos com preço superior a R$ 100,00.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20) Faça um programa que receba 10 notas de uma turma e armazene em um vetor. Depois disso, calcule a média de notas
+da turma e mostre na tela as notas que estão acima da média.
+let vetor = []
+        let soma = 0
+        for (let i = 0;i<10;i++){
+            let nota = +prompt("Me dê uma nota para média")
+            vetor[i] = nota
+        }
+        for (let elemento of vetor){
+            soma+=elemento
+        }
+        let notasAcima = []
+        let media = soma/(vetor.length)
+        for (let i = 0;i<10;i++){
+            if (vetor[i]>media){
+                notasAcima.push(vetor[i])
+            }
+        }
+        
+        console.log(`A média da sala é de ${media.toFixed(2)}, e as notas acima da média: ${notasAcima.length > 0 ? notasAcima:"Não há"}`)
