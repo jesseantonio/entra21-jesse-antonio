@@ -155,7 +155,7 @@ Exercício 10
 Exercício 11
     let vetor = []
     for(i = 0; i < 5; i++){
-        let numero = +prompt(`Digite ${i + 1} º número`)     a
+        let numero = +prompt(`Digite ${i + 1} º número`)
         vetor[i] = numero
     }
     let maiorValor = 0
