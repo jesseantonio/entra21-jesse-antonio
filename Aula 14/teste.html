@@ -7,26 +7,49 @@
 </head>
 <body>
     <script>
-        let matriz = []
-        let quantidadeMaior10 = 0
-        for (let i = 0; i < 5; i++) {
-        matriz[i] = []
-        for (let j = 0; j < 5; j++) {
-                    matriz[i][j] = +prompt("Digite um número")
+    let matriz = []
+        for (let linha = 0; linha<3 ; linha++){
+            matriz[linha] = []
+            for (let coluna = 0; coluna<4; coluna++){
+                if (coluna == 0){
+                    matriz[linha][coluna] = prompt("Digite o nome do aluno")
+                }
+                else{
+                    matriz[linha][coluna] = +prompt("Digite a nota do aluno")
                 }
             }
-            
-        
-        
+        }
+
+        for (let linha = 0; linha<3 ; linha++){
+            let soma = 0
+            for (let coluna = 0; coluna<4; coluna++){
+                if (coluna != 0){
+                    soma += matriz[linha][coluna]
+                }
+            }
+            let media = soma /3
+            matriz[linha][4] = media.toFixed(2)
+        }
+
+        for (let linha = 0; linha< 3; linha++){
+            if (matriz[linha][4] >= 6){
+                    matriz[linha][5] = "Aprovado"
+                }
+            else{
+                matriz[linha][5] = "Reprovado"
+            }
+        }
+
+        mostrarMatriz = ""
+        for (let linha = 0; linha < 3; linha++){
+            for (let coluna = 0; coluna < 6; coluna++){
+                mostrarMatriz += matriz[linha][coluna] + "\t"
+            }
+            mostrarMatriz += "\n"
+        }
+        console.log(mostrarMatriz)
+
     </script>
 
 </body>
 </html>
-2. Declare uma matriz 5 x 5. Preencha com 1 a diagonal principal e com 0 os demais
-elementos (Matriz Identtidade). Escreva ao final a matriz obtida.
-Saída:
-1 0 0 0 0
-0 1 0 0 0
-0 0 1 0 0
-0 0 0 1 0
-0 0 0 0 1

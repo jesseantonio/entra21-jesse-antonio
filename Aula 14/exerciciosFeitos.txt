@@ -14,3 +14,156 @@ Exercício 1
             console.log(`A quantidade de elementos digitados que são maiores que 10 é: ${quantidadeMaior10}`)
 
 Exercício 2
+    let matriz = []
+        for (let linha = 0; linha < 5; linha++){
+            matriz[linha] = []
+            for (let coluna = 0; coluna < 5; coluna++){
+                matriz[linha][coluna] = Number(prompt("Me de um numero: "))
+            }
+        }
+        for (let linha = 0; linha<5 ; linha++){
+            for (let coluna = 0; coluna<5; coluna++){
+                if (coluna==linha){
+                    matriz[linha][coluna] = 1
+                }
+                else{
+                    matriz[linha][coluna] = 0
+                }
+            }
+        }
+        mostrarMatriz = ""
+        for (let linha = 0; linha < 5 ; linha++){
+            for (let coluna = 0; coluna < 5; coluna++){
+                mostrarMatriz += matriz[linha][coluna] + "\t"
+            }
+            mostrarMatriz += "\n"
+        }
+        console.log(`A MATRIZ IDENTIDADE É:\n${mostrarMatriz}`)
+    
+Exercício 3
+    let matriz = []
+    for (let linha = 0; linha < 3; linha++){
+            matriz[linha] = []
+            for (let coluna = 0; coluna < 3; coluna++){
+                matriz[linha][coluna] = +prompt("Digite um valor")
+            }
+        }
+        let x = +prompt("Digite o valor para encontrar")
+        let achar = false
+        for (let linha = 0; linha < 3 ; linha++){
+            for (let coluna = 0; coluna < 3; coluna++){
+                if (matriz[linha][coluna] == x){
+                    achar = `A localização do elemento é linha ${linha} e coluna ${coluna}`
+                }
+            }
+        }
+        if (achar) {
+        console.log(achar)
+        } else {
+        console.log("Não encontrado")
+    }
+
+Exercício 4
+    let matriz = []
+        for (let linha = 0; linha < 3; linha++){
+            matriz[linha] = []
+            for (let coluna = 0; coluna < 3; coluna++){
+                matriz[linha][coluna] = +prompt("Digite um valor para a primeira matriz")
+            }
+        }
+        
+        let matriz2 = []
+        for (let linha = 0; linha < 3 ; linha++){
+            matriz2[linha] = []
+            for (let coluna = 0; coluna < 3; coluna++){
+                matriz2[linha][coluna] = +prompt("Digite um valor para a segunda matriz")
+            }
+        }
+
+        matrizMaior = []
+        for (let linha = 0; linha < 3 ; linha++){
+            matrizMaior[linha] = []
+            for (let coluna = 0; coluna < 3; coluna++){
+                if (matriz[linha][coluna] > matriz2[linha][coluna]){
+                    matrizMaior[linha][coluna] = matriz[linha][coluna]
+                }
+                else{
+                    matrizMaior[linha][coluna] = matriz2[linha][coluna]
+                }
+            }
+        }
+        
+        mostrarMatriz = ""
+        for (let linha = 0; linha < 3; linha++){
+            for (let coluna = 0; coluna < 3; coluna++){
+                mostrarMatriz += matrizMaior[linha][coluna] + "\t"
+            }
+            mostrarMatriz += "\n"
+        }
+        console.log(mostrarMatriz)
+
+Exercício 5
+    let matriz = []
+        for (let linha = 0; linha < 3; linha++){
+            matriz[linha] = []
+            for (let coluna = 0; coluna < 3; coluna++){
+                matriz[linha][coluna] = +prompt("Digite um valor para a primeira matriz")
+            }
+        }
+
+        let soma = 0
+        for (let linha = 0; linha < 3; linha++){
+            for (let coluna = 0; coluna < 3; coluna++){
+                if (linha < coluna){
+                    soma += matriz[linha][coluna]
+                }
+            }
+        }
+        console.log(`A soma é ${soma}`)
+
+Exercício 6
+    let matriz = []
+        for (let linha = 0; linha < 3; linha++){
+            matriz[linha] = []
+            for (let coluna = 0; coluna < 4; coluna++){
+                if (coluna == 0){
+                    matriz[linha][coluna] = prompt("Digite o nome do aluno")
+                }
+                else{
+                    matriz[linha][coluna] = +prompt("Digite a nota do aluno")
+                }
+            }
+        }
+
+        for (let linha = 0; linha < 3; linha++){
+            let soma = 0
+            for (let coluna = 0; coluna<4; coluna++){
+                if (coluna != 0){
+                    soma += matriz[linha][coluna]
+                }
+            }
+            let media = soma / 3
+            matriz[linha][4] = media.toFixed(2)
+        }
+
+        for (let linha = 0; linha < 3; linha++){
+            if (matriz[linha][4] >= 6){
+                    matriz[linha][5] = "Aprovado"
+                }
+            else{
+                matriz[linha][5] = "Reprovado"
+            }
+        }
+
+        mostrarMatriz = ""
+        for (let linha = 0; linha < 3; linha++){
+            for (let coluna = 0; coluna < 6; coluna++){
+                mostrarMatriz += matriz[linha][coluna] + "\t"
+            }
+            mostrarMatriz += "\n"
+        }
+        console.log(mostrarMatriz)
+
+
+    
+
