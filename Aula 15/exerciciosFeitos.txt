@@ -1,0 +1,190 @@
+Exercício 1
+    function ehPositivo(numero) {
+    if(numero > 0) {
+        return true
+    }
+    return false
+}
+
+    let numero = +prompt("Digite um número")
+    console.log(ehPositivo(numero))
+
+Exercício 2
+    function minimo(a, b) {
+    if(a > b) {
+        return true
+    }
+    return false
+}
+
+    let a = +prompt("Digite o número A")
+    let b = +prompt("Digite o número B")
+    if (minimo(a, b)) {
+            console.log(`O número A é maior | ${a}`)
+        } else {
+            console.log(`O número B é maior | ${b}`)
+        }
+
+Exercício 3
+function potencia(a, b) {
+    let resultado = a ** b
+    console.log(resultado)
+}
+
+    let a = +prompt("Digite o número A")
+    let b = +prompt("Digite o número B")
+    
+    potencia(a, b)
+
+Exercício 4
+function media(nota1, nota2, nota3) {
+    let resultado = (nota1 + nota2 + nota3) / 3
+    console.log(resultado)
+}
+
+    let nota1 = +prompt("Digite a nota 1")
+    let nota2 = +prompt("Digite a nota 2")
+    let nota3 = +prompt("Digite a nota 3")
+    
+    media(nota1, nota2, nota3)
+
+Exercício 5
+function confereMedia(media) {
+    if (media >= 0 && media < 5) {
+        console.log("D")
+    }
+    else if (media >= 5 && media < 7) {
+        console.log("C")
+    }
+    else if (media >= 7 && media < 9) {
+        console.log("B")
+    }
+    else if (media >= 9 && media <= 10) {
+        console.log("A")
+    }
+    else{
+        console.log("Fora dos conceitos")
+    }
+}
+
+    let media = +prompt("Digite a média do aluno")
+    
+    confereMedia(media)
+
+Exercício 6
+function pesoIdeal(altura, sexo) {
+    switch (sexo) {
+        case "M":
+            let pesoIdealHomem = 72.7 * altura - 58
+            console.log(pesoIdealHomem.toFixed(2))
+            break;
+        case "F":
+            let pesoIdealMulher = 62.1 * altura - 44.7
+            console.log(pesoIdealMulher.toFixed(2))
+            break;
+        default:
+            console.log("Valor indefinido")
+            break;
+    }
+}
+
+    let altura = +prompt("Digite a sua altura")
+    let sexo = prompt("Digite o seu sexo | M/F")
+    
+    pesoIdeal(altura, sexo)
+
+Exercício 7
+let vetor = []
+    function cadastrarNumerosInteiros() {
+        
+        for (let x = 0; x < 50 ; x++){
+        let numero = Math.round((Math.random(1,50)*(50-1))+1)
+        vetor[x] = numero
+        console.log(vetor[x])
+        }
+    }
+    function lerMaiorMenor(){
+        let maior = Math.max.apply(null, vetor)
+        console.log(`O número maior é ${maior}`)
+        let menor = Math.min.apply(null, vetor)
+        console.log(`O número menor é ${menor}`)
+    }
+
+    cadastrarNumerosInteiros()
+    lerMaiorMenor()
+
+Exercício 8
+    function transformarIdadeDias(anos, meses, dias) {
+        let resultadoAnos = anos * 365
+        let resultadoMeses = meses * 30
+        let resultadoTotal = resultadoAnos + resultadoMeses + dias
+        console.log(`A quantidade de dias é ${resultadoTotal}`)
+    
+    }
+    let anos = +prompt("Digite quantos anos de vida essa pessoa tem")
+    let meses = +prompt("Digite o restante de meses que sobraram | Máx: 11")
+    let dias = +prompt("Digite a quantidade de dias que sobraram | Máx: 30")
+    
+    transformarIdadeDias(anos, meses, dias)
+
+Exercício 9
+    function retornarDivisores(numero){
+        let total = 0
+        for(let i = 1; i <=numero; i++) {
+            if(numero %i == 0){
+                total++
+            }
+        }
+        return(total)     
+    }
+    let numero = +prompt("Digite um número para eu verificar")
+    let divisoresNumero = retornarDivisores(numero)
+    divisoresNumero ? console.log(`O número ${numero} tem ${divisoresNumero} divisores`) : console.log("ERRO")
+
+Exercício 10
+    function calcularFatorialRecursivamente (n) {
+        if (n === 1) {
+        return 1;
+    }
+     
+    return n * calcularFatorialRecursivamente (n - 1);
+}
+ 
+    function calcularFatorial (fatorial) {
+    if (isNaN(fatorial)) {
+        return 'Não existe fatorial de um texto';
+    }
+     
+    if (!Number.isInteger(fatorial) || fatorial < 0) {
+        return 'Não existe fatorial de um número não natural';
+    }
+     
+    if (fatorial === 0 || fatorial === 1) {
+        return 1;
+    }
+     
+    return calcularFatorialRecursivamente(fatorial);
+}
+let numero = +prompt("Digite um número para fatorar")
+console.log(calcularFatorial(numero));
+
+Exercício 11
+let soma = 0
+    function perfeito(numero){
+        for(let i = 2; i < numero ; i++)
+        if (numero % i == 0)
+        soma += i
+        soma++
+
+ if(soma == numero)
+  console.log("Perfeito")
+ else
+  console.log("Nao é perfeito")
+}
+  let numero = +prompt("Digite um número para eu verificar se é perfeito")  
+   perfeito(numero)
+
+Exercício 12
+
+
+

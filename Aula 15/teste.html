@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let vetor = []
+    function cadastrarNumerosInteiros() {
+        
+        for (let x = 0; x < 50 ; x++){
+        let numero = Math.round((Math.random(1,50)*(50-1))+1)
+        vetor[x] = numero
+        console.log(vetor[x])
+        }
+    }
+    function ordenarDecrescente(cadastrarNumerosInteiros) {
+    let length = cadastrarNumerosInteiros.length;  
+    
+    for (let i = 0; i < length; i++) { 
+          for (let j = 0; j < (length - i - 1); j++) { 
+                   if(cadastrarNumerosInteiros[j] > cadastrarNumerosInteiros[j+1]) {
+                let tmp = cadastrarNumerosInteiros[j]; 
+                cadastrarNumerosInteiros[j] = cadastrarNumerosInteiros[j+1]; 
+                cadastrarNumerosInteiros[j+1] = tmp; 
+            }
+        }        
+    }
+}
+cadastrarNumerosInteiros()
+ordenarDecrescente(cadastrarNumerosInteiros)
+    
+    
+    </script>
+</body>
+</html>
+12) Faça um procedimento que recebe 50 valores inteiros por parâmetro e retorna-os ordenados em ordem decrescente.
+Gere 50 valores aleatórios com a função Math.random(), adicione-os em um vetor e mostre eles na tela antes da
+ordenação e após a ordenação.
+
