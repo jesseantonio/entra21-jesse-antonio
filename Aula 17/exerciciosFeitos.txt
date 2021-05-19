@@ -98,7 +98,7 @@ let vetor = []
     function cadastrarNumerosInteiros() {
         
         for (let x = 0; x < 50 ; x++){
-        let numero = Math.round((Math.random(1,50)*(50-1))+1)
+        let numero = Math.floor(Math.random() * 1000) + 1
         vetor[x] = numero
         console.log(vetor[x])
         }
@@ -185,6 +185,31 @@ let soma = 0
    perfeito(numero)
 
 Exercício 12
+let vetor = []
+    function cadastrarNumerosInteiros() {
+        
+        for (let x = 0; x < 50 ; x++){
+        let numero = Math.round((Math.random(1,50)*(50-1))+1)
+        vetor[x] = numero
+        console.log(vetor[x])
+        }
+    }
+    function bubbleSort(vetor) {
+        for (let i = 1; i < vetor.length; i--) {
+        for (let j = 0; j < i; j--) {
+        if (vetor[i] > vetor[j]) {
+            let temp = vetor[i];
+            vetor[i] = vetor[j];
+            vetor[j] = temp;
+        }
+    }
+}
+    console.log(vetor)
+    }
+
+
+bubbleSort(vetor)
+cadastrarNumerosInteiros()      ------ INCOMPLETA
 
 
 

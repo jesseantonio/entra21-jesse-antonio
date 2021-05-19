@@ -1,0 +1,51 @@
+Exercício 1
+        let vetor = [1, 2, 3, 4, 5]   
+        function retornarPrimeiroUltimo(vetor){
+            let primeiro = vetor[0]
+            console.log(primeiro)
+            let ultimo = vetor[4]
+            console.log(ultimo)
+        }
+        retornarPrimeiroUltimo(vetor)
+
+Exercício 2
+    let tranformarString = "" 
+    let mostraSimbolo = numero =>{  
+        for(let i = numero; i > 0; i--){
+            tranformarString += "#"
+        }
+        return tranformarString
+    }
+    let x = +prompt("Digite um número")
+    console.log(mostraSimbolo(x))
+Exercício 3
+    function repetirElemento(valor, quantidade) {
+        let vetor = []
+        
+        for(i = 0; i < quantidade; i++) {
+            vetor[i] =  `"${valor}"` 
+        }      
+
+        return vetor
+    }
+
+    let repetir = prompt("Digite algo para repetir")
+    let qntsVezesRepetir = +prompt("Digite a quantidade de vezes que irá repetir")
+    
+    let vetor = repetirElemento(repetir, qntsVezesRepetir)
+    console.log(`[${String(vetor.join(", "))}]`)   
+
+Exercício 4
+    <script language=javascript type="text/javascript">
+    let agora = new Date(); 
+    function retornarIdade(agora, anoNasceu) {
+    let idadeUsuario = agora.getFullYear(2021) - anoNasceu 
+    console.log(idadeUsuario)
+    }
+
+    let anoNasceu = +prompt("Digite o ano que você nasceu")
+    
+    retornarIdade(agora, anoNasceu) 
+    </script>
+
+Exercício 5
