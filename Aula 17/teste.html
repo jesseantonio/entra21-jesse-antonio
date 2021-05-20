@@ -7,32 +7,24 @@
 </head>
 <body>
     <script>
-    function calcularFatorialRecursivamente (n) {
-        if (n === 1) {
-        return 1;
+    let vetor = []
+    function cadastrarNumerosInteiros() {
+        
+        for (let x = 0; x < 50 ; x++){
+        let numero = Math.floor(Math.random() * 50) + 1
+        vetor[x] = numero
+        console.log(vetor[x])
+        }
     }
-     
-    return n * calcularFatorialRecursivamente (n - 1);
-}
- 
-    function calcularFatorial (fatorial) {
-    if (isNaN(fatorial)) {
-        return 'Não existe fatorial de um texto';
+    function lerMaiorMenor(){
+        let maior = Math.max.apply(null, vetor)
+        console.log(`O número maior é ${maior}`)
+        let menor = Math.min.apply(null, vetor)
+        console.log(`O número menor é ${menor}`)
     }
-     
-    if (!Number.isInteger(fatorial) || fatorial < 0) {
-        return 'Não existe fatorial de um número não natural';
-    }
-     
-    if (fatorial === 0 || fatorial === 1) {
-        return 1;
-    }
-     
-    return calcularFatorialRecursivamente(fatorial);
-}
-let numero = +prompt("Digite um número para fatorar")
-console.log(calcularFatorial(numero));
-    
+
+    cadastrarNumerosInteiros()
+    lerMaiorMenor()
     
     </script>
 </body>
