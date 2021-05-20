@@ -6,18 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    <script language=javascript type="text/javascript">
-    let agora = new Date(); 
-    function retornarIdade(agora, anoNasceu) {
-    let idadeUsuario = agora.getFullYear(2021) - anoNasceu 
-    console.log(idadeUsuario)
-    }
-
-    let anoNasceu = +prompt("Digite o ano que você nasceu")
+    <script>
     
-    retornarIdade(agora, anoNasceu) 
+    let vetor2 = 0
+    let retornarPares = vetor =>{ 
+        if (numero % 2 == 0) {
+            vetor2++
+            console.log(vetor2)
+        }
+    }
+    let vetor = []
+    for (let i = 0; i < 5; i++) {
+    let numero = +prompt(`Digite ${i + 1} º valor`)    
+    vetor[i] = numero 
+    }
+    
+    
     </script>
 </body>
 </html>
-4) Escreva um script que receba o ano em que você nasceu e calcule a sua idade. Utilize uma função que retorna
-idade.
+6) Elabore uma função que receba um vetor e retorne outro vetor que tenha todos os números que são pares e estão em
+índices pares do vetor.
+
+while (contadoraPares < 6) {
+    let numero = +prompt("Digite um número")
+    if (numero % 2 != 0) {
+        console.log("Contém número ímpar")
+        continue
+    }
+    numeros[contadoraPares] = numero
+    contadoraPares++
+    }    
+    for (let i = numeros.length - 1; i >= 0; i--) {
+        console.log(numeros[i])
+    }
+
+    let tranformarString = "" 
+    let mostraSimbolo = numero =>{  
+        for(let i = numero; i > 0; i--){
+            tranformarString += "#"
+        }
+        return tranformarString
+    }
+    let x = +prompt("Digite um número")
+    console.log(mostraSimbolo(x))

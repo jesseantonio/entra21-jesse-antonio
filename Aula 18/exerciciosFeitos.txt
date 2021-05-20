@@ -18,6 +18,7 @@ Exercício 2
     }
     let x = +prompt("Digite um número")
     console.log(mostraSimbolo(x))
+
 Exercício 3
     function repetirElemento(valor, quantidade) {
         let vetor = []
@@ -49,3 +50,15 @@ Exercício 4
     </script>
 
 Exercício 5
+let vetor = []
+    for (let i = 0; i < 5; i++) {
+    let numero = +prompt(`Digite ${i + 1} º valor`)    
+    vetor[i] = numero 
+    }
+    console.log(vetor)
+    function modificarERetornarVetores(vetor){
+        vetor[1] = 20
+        vetor[2] = 30
+        console.log(vetor)
+    }
+    modificarERetornarVetores(vetor)
