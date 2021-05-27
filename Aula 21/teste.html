@@ -7,33 +7,44 @@
 </head>
 <body>
     <script>
-        let matricula = [0, 1, 2, 3]
-        let notas = []
-        let notas2 = 0
-        function cadastroNota(matricula, notas){
-            let matriculaIgual = +prompt("Digite a matrícula do aluno")
-            for (let elemento of matricula) {
-                if (matriculaIgual = elemento) {
-                    for(let i = 0; i < 3; i++){
-                    notas[i] = +prompt(`Digite a ${i + 1}a nota`)
-                    notas[i] = notas
-                    }                    
-                    break
-                } else {
-                    console.log("A matrícula não condiz que nenhuma que possui no nosso sistema\nSinto muito :(")
-                    continue
-                }
+        let armazenador = [["1"]] // matriculas
+        function verificarMatricula(matricula) // essa função confere, se existe a matricula dentro da matriz
+        // se existir = true
+        {    
+               
+            for (let i of armazenador)​​​​​​​​​​​{
+                if (i[0] === matricula) return true
             }
-            console.log(notas)
+            return false
         }
-        cadastroNota(matricula, notas)
-    </script>
-</body>
-</html>
-let notas = [],
-        acumuladorNotas = 0
+        {
+        }       
+        
+        function cadastrarNotas() // se for true a verificação, cadastro as notas dentro do vetor notas, que vai ser inserido na matriz
+        {
+            let matricula = +prompt("Digite a matrícula do aluno")
+            if (verificarMatricula(matricula)) {
+            }
+        for (let i = 0; i < 4; i++) {
+                let notas = []
+                notas[i] = +prompt("Digite a nota do seu aluno")
+                }
+        return notas
+        }
+        function armazenarNotas (matrizGlobal) // percorro toda a matriz, para inserir as notas dentro(dependo da matricula)
+        {
+            for (let linha = 0; linha < 3; linha++) {
+                matriz[linha] = []
+                for (let coluna = 0; coluna < 3; coluna++) {​​​​​
+            if (matricula == notas[0]) {  
+                matricula[i][2] = notas[0]
+                matricula[i][3] = notas[1]
+                matricula[i][4] = notas[2]
+                nota.push(notas[0], notas[1], notas[2])
+                return matrizGlobal[notas]
+}
+                }
+}
+}
 
-    for (let i = 0; i < 10; i++) {
-        notas[i] = +prompt(`Digite a ${i + 1}a nota`)
-        acumuladorNotas += notas[i]
-    }
+

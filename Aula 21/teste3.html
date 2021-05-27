@@ -1,0 +1,56 @@
+let lista = [["12345","Fabio"]]
+
+       function pedirNotaAluno (){
+        let matricula = +prompt("Digite o número da sua matricula")
+        for (let i of lista)​​​​​​​​​​​{
+            if (matricula == i [0]) {
+                let notas = []
+                    for (let i = 0; i < 4; i++) {
+                    notas[i] = +prompt("Digite suas notas")
+                    }
+                return notas, matricula
+            }
+            return "Não foi possivel encontrar a matrícula"
+        }
+       }
+        
+       function cadastrarNotas (notas, matricula){
+function pedirNotaAluno (){
+ let matricula = +prompt("Digite o número da sua matricula")
+ for (let i of lista){
+     if (matricula == i [0]) {
+         let notas = []
+             for (let i = 0; i < 3; i++) {
+             notas[i] = +prompt("Digite suas notas")
+             }
+         return cadastrarNotas(notas, matricula)
+     }
+     return "Não foi possivel encontrar a matrícula"
+ }
+}
+ function cadastrarNotas (notas, matricula){
+
+            for ( let i of lista)​​​​​​​​​​​{
+            if (matricula == i [0]) {
+                i.push(notas[0])
+                i.push(notas[1])
+                i.push(notas[2])
+     for ( let i of lista){
+     if (matricula == i [0]) {
+         i.push(notas[0])
+         i.push(notas[1])
+         i.push(notas[2])
+
+                return lista
+            }
+            
+            }
+        }
+        console.log(cadastrarNotas (pedirNotaAluno())) 
+         return lista
+     }
+
+     }
+ }
+ console.log(pedirNotaAluno()) 
+
