@@ -1,0 +1,26 @@
+function lerNumero(){
+            let numero = +prompt("Digite um número")
+            if (isFinite(numero)) {
+                return console.log("Você digitou um valor númerico")
+            } 
+            else if (isNaN(numero)){
+                lerNumero()
+            }
+        }
+    lerNumero()
+    
+    let string = "eai beleza"
+        function capitalize(string){
+            let replace1 = string[0].toUpperCase()
+            let replace2 = string[4].toUpperCase()
+            let novaString = string(replace1, [0])
+            novaString = string(replace2, [4])
+            novaString = string
+        }
+    capitalize(string)
+
+    let string = prompt("Digite algo")
+        function checaSpam(string){
+            console.log(string.includes("jequiti" || "day trading"))
+        }
+    checaSpam(string)
