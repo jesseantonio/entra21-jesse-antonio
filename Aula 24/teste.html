@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let objeto = {
+        num1: 0,
+        num2: 0,
+        lerValores() {
+          numm1 = +prompt("Digite o número 1")
+          numm2 = +prompt("Digite o número 2")
+          numm1 = num1
+          numm2 = num2
+        },
+        decrementa(){
+        console.log(`${this.contador - 1}`)
+        },
+        
+        incrementaEm(quantidade){
+        console.log(`${this.contador + this.quantidade}`)
+        },
+        
+        decrementaEm(quantidade) {
+        console.log(`${this.contador - this.quantidade}`)
+        },
+        
+        mostraContador(contador){
+        console.log(this.contador)
+        }
+        }
+
+    objeto.incrementa()
+    objeto.decrementa()
+    objeto.incrementaEm()
+    objeto.decrementaEm()
+    objeto.mostraContador()
+    </script>
+</body>
+</html>
+2) Crie o objeto calculadora com três métodos:
+    lerValores() -> pede dois valores ao usuário e os salva como
+    propriedades.
+    soma() -> retorna a soma dos valores salvos
+    multiplicacao() -> retorna a multiplicação dos valores salvos.
+    */

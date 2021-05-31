@@ -1,0 +1,42 @@
+Exercício 1
+let pessoa = {
+                nome: "João",
+                idade: 23
+             }
+        function estaVazio({pessoa}){
+            if (Object.values(pessoa).length === 0) {
+            return true
+            }
+            return false    
+        }
+estaVazio({pessoa})
+
+Exercício 2
+        let objeto = {
+        quantidade: +prompt("Digite a quantidade"),
+        contador: 0,
+        incrementa() {
+          console.log(`${this.contador++}`)
+        },
+        decrementa(){
+        console.log(`${this.contador--}`)
+        },
+        
+        incrementaEm(quantidade){
+        console.log(`${this.contador++ + this.quantidade}`)
+        },
+        
+        decrementaEm(quantidade) {
+        console.log(`${this.contador++ - this.quantidade}`)
+        },
+        
+        mostraContador(contador++){
+        console.log(this.contador)
+        }
+        }
+
+    objeto.incrementa()
+    objeto.decrementa()
+    objeto.incrementaEm()
+    objeto.decrementaEm()
+    objeto.mostraContador()

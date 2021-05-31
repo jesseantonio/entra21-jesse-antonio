@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let objeto = {
+                    nome: "João",
+                    idade: 23
+                }
+        let flagMenu = true
+        function menu() {
+            let objeto2 = {
+                "+1": "Cadastrar aluno",
+                "+2": "Editar aluno",
+                "+3": "Cadastrar notas",
+                "+4": "Mostrar aluno",
+                "+0": "Sair"
+            }
+
+            for (let chave in objeto2) {
+                console.log(+chave)
+            }
+        }
+                
+
+        let media = 0
+        let soma = 0
+        let matricula
+        let notas = []
+        let matriz = []
+        let alunosCadastrados = 0
+        let linha = 0
+        let cadastrarAluno = () =>{
+            matriz[linha] = []
+            matricula = +prompt("Digite a matricula:")
+            if (isNaN(matricula)) {
+                alert("Matrícula não é valida")
+                return
+            }
+                for (let verificar = 0; verificar < linha; verificar++) {
+                    if (matricula === matriz[verificar][0]) {
+                        alert("Esta matrícula já está cadastrada.")
+                        return
+                    }
+                }
+            let nome = prompt("Digite o nome do aluno:")
+            if (nome >= 0 || nome < 0) {
+                alert("Nome não é valido")
+                return
+            }
+            matriz[linha][1] = nome
+            matriz[linha][0] = matricula
+            alert("Aluno cadastrado.")
+            alunosCadastrados++
+            linha++
+        }
+        let editarInformacoes = () => {
+            matriculaEditar = +prompt("Digite a matrícula do aluno que deseja editar:")
+                for (let verificar = 0; verificar < linha; verificar++) {
+                    if (matriculaEditar === matriz[verificar][0]) {
+                        matriz[verificar][1] = prompt("Digite novo nome que deseja editar:")
+                        alert("Nome editado com sucesso.")
+                        return
+                    }
+                
+                }
+        }
+        function cadastrarNotas() { // se for true a verificação, cadastro as notas dentro do vetor notas, que vai ser inserido na matriz
+            let MatriculaVerificar = +prompt("Digite a matrícula do aluno")
+            aluno = verificarMatricula(MatriculaVerificar)
+            if (aluno >= 0 || aluno === true) { // se linha = 0 nao entra na opcao
+                for (let i = 0; i < 3;) {
+                    let verificaNotas = +prompt(`Digite a ${i + 1}º nota do aluno`)
+                    if (verificaNotas > 10 || verificaNotas < 0) {
+                        alert("Nota invalida")
+                        continue
+                    } else {
+                        notas[i] = verificaNotas
+                        i++  
+                    }
+                    
+                }
+            armazenarNotas(notas, aluno)
+            }
+        }
+        function verificarMatricula (MatriculaVerificar) {  // essa função confere, se existe a matricula dentro da matriz se existir = true  
+            for (let verificar = 0; verificar < linha; verificar++) {
+                if (MatriculaVerificar === matriz[verificar][0]) {
+                    return verificar
+                }
+            }
+        return false
+        }      
+        function armazenarNotas(notas, aluno)  {
+            matriz[aluno][2] = notas[0]
+            matriz[aluno][3] = notas[1]
+            matriz[aluno][4] = notas[2]
+            calcularMedia(aluno)
+        }
+        function calcularMedia(aluno) {
+            for(let i = 0; i <3; i++) {
+                soma += notas[i]
+            }
+            media = soma/3
+            media.toFixed(2)
+            matriz[aluno].push(media.toFixed(2))
+        }
+        function mostraMatriz() {
+        let mostrandoMatriz = "Matricula\tAluno\tNota 1\tNota 2\tNota 3\t  Média \n"
+            for (let i = 0; i < linha; i++) {
+                for (let j = 0; j < 6; j++) {
+                    let adicionar = matriz[i][j]
+                    if (adicionar === undefined) {
+                        mostrandoMatriz += "\t" + "--" + "\t"
+                    } else {
+                        mostrandoMatriz += "\t" + matriz[i][j] + "\t"
+                    }
+                    
+                }
+            mostrandoMatriz += "\n"    
+            }
+        console.log(mostrandoMatriz);
+        }
+
+        menu()
+    </script>
+</body>
+</html>
