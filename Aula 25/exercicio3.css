@@ -1,0 +1,14 @@
+#titulo{
+color: blue;
+text-align: center;
+font-size: 40px;
+}
+img {
+    max-width: 50%;
+    height: auto;    
+}
+.poema{
+    color:black;
+    font-size: 25px;
+    
+}

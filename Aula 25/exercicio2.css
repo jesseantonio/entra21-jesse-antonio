@@ -1,0 +1,12 @@
+.primeira-frase{
+    color: green;
+    font-size: 15px;
+}
+.segunda-frase{
+    color: red;
+    font-size: 22px;
+}
+#diferente{
+    color: blue;
+    font-size: 22px;
+}
