@@ -1,5 +1,6 @@
 *{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
 }
 
 body{
@@ -7,72 +8,78 @@ body{
     background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 }
 #titulo{
-    font-weight: normal
-    
-}
-
-#subtitulo{
-    font-weight: normal
-}
-
-#menu ul li a {
-    
-    padding: 2px 10px;
-    display: inline-block;
-
-    /* visual do link */
-    background-color:#EDEDED;
-    color: #333;
-    text-decoration: none;
-    border-bottom:3px solid #EDEDED;
-}
-#menu ul li { display: inline; }
-
-.texto{
-    color: white;
-}
-
-#titulo{
     font-size: 50px;
+    color: white;
+    font-weight: normal
 }
-
 #subtitulo{
     font-size: 20px;
-}
-
-#menu-superior ul li a {
+    font-weight: normal
     
-    padding: 2px 10px;
-    display: inline-block;
-
-    /* visual do link */
-    color:white;
+}
+#link{
     text-decoration: none;
-    word-spacing: 100px;
+    border-bottom: dotted 2px;
+}
+#link:hover{
+    border-bottom: none;
+}
+nav{
+    background-color: white;
+    text-align: center;
+    padding: 2%;
+    border-radius: 100px;
+
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
     
 }
-#menu-superior ul li a {
-    padding:0px;
-    margin:0px;
-    list-style:none;
+nav ul li{
+    display: inline;
+    
 }
-#menu-superior ul li { display: inline;}
-
-#menu-superior ul {
-    background-color:gray;
-    top: auto;
+nav ul li a{
+    padding: 3%;
+    text-decoration: none;
+    color: black;
+    position: sticky;
+    top: 0px;
 }
-
+a:hover{
+    padding: 0.1rem;
+    background-color: rgba(240, 239, 239, 0.9);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    position: fixed;
+}
 .texto{
     color: white;
 }
-
+.texto{
+    color: white;
+}
 #img{
-    max-width: auto;
-    max-height: auto;   
-    border-width: 8px;
-    border-style: inset;
-    border-color: white;
-    margin-right: 50px;
-    border-radius: 200px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 50%;
+    float:right;
+    border: 1px solid gray
+}
+main{
+    background-color: white;
+    margin-left: 8.2%;
+    margin-right: 8.2%;
+    border-top-left-radius:0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    
+}
+.textao{
+padding: 3em 1.5em 1em 1.5em;
 }
