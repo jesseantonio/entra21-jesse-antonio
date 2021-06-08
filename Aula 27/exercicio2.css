@@ -1,3 +1,20 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+}
+#titulo{
+    font-weight: normal
+    
+}
+
+#subtitulo{
+    font-weight: normal
+}
+
 #menu ul li a {
     
     padding: 2px 10px;
