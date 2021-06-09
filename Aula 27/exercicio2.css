@@ -13,8 +13,10 @@ body{
     font-weight: normal
 }
 #subtitulo{
-    font-size: 20px;
-    font-weight: normal
+    font-size: 1.25em;
+    font-weight: normal;
+    letter-spacing: 0;
+    
     
 }
 #link{
@@ -29,7 +31,7 @@ nav{
     text-align: center;
     padding: 2%;
     border-radius: 100px;
-
+    position: sticky;
 }
 nav ul{
     padding: 0px;
@@ -67,8 +69,12 @@ a:hover{
     box-sizing: border-box;
     padding: 10px;
     border-radius: 50%;
-    float:right;
-    border: 1px solid gray
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 300px;
+    left: 850px;
+    bottom: -260px;
 }
 main{
     background-color: white;
@@ -81,5 +87,44 @@ main{
     
 }
 .textao{
-padding: 3em 1.5em 1em 1.5em;
+padding: 0.25em 5em 
+}
+
+#img2{
+  width: 95px;
+  height: 95px;
+}
+
+#titulo1{
+    padding-top: 2rem;
+    padding-bottom: -10rem;
+    padding-left: 5rem;
+    font-weight: normal;
+    color: rgb(78, 78, 78);
+    font-size: 30px;
+}
+
+#tracinho{
+    padding-bottom: rem;
+}
+
+.botao{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: solid #ccc;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: rgba(61, 61, 61, 0.021);
 }
