@@ -10,11 +10,11 @@ body{
 #titulo{
     font-size: 50px;
     color: white;
-    font-weight: normal
+    font-weight: lighter;
 }
 #subtitulo{
     font-size: 1.25em;
-    font-weight: normal;
+    font-weight: lighter;
     letter-spacing: 0;
     
     
@@ -22,26 +22,32 @@ body{
 #link{
     text-decoration: none;
     border-bottom: dotted 2px;
+    position: inherit;
+    font-weight: lighter;
 }
 #link:hover{
     border-bottom: none;
+    background-color: unset;
 }
 nav{
-    background-color: white;
+    background-color:white;
     text-align: center;
     padding: 2%;
     border-radius: 100px;
     position: sticky;
+    position: static;
+    font-weight: lighter;
 }
 nav ul{
     padding: 0px;
     margin: 0px;
     list-style: none;
-    
+    position: static;
 }
 nav ul li{
     display: inline;
-    
+    position: sticky;
+    position: sticky;
 }
 nav ul li a{
     padding: 3%;
@@ -49,6 +55,7 @@ nav ul li a{
     color: black;
     position: sticky;
     top: 0px;
+    position: static;
 }
 a:hover{
     padding: 0.1rem;
@@ -57,13 +64,18 @@ a:hover{
     border-top-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    position: fixed;
+    position: static;
 }
 .texto{
     color: white;
 }
+
+#texto1{
+    font-size: 16px;
+}
 .texto{
     color: white;
+    font-weight: lighter;
 }
 #img{
     box-sizing: border-box;
@@ -78,7 +90,7 @@ a:hover{
 }
 main{
     background-color: white;
-    margin-left: 8.2%;
+    margin-left: 5%;
     margin-right: 8.2%;
     border-top-left-radius:0.5rem;
     border-top-right-radius: 0.5rem;
@@ -87,7 +99,8 @@ main{
     
 }
 .textao{
-padding: 0.25em 5em 
+padding: 0.25em 5em; 
+font-weight: lighter;
 }
 
 #img2{
@@ -99,19 +112,17 @@ padding: 0.25em 5em
     padding-top: 2rem;
     padding-bottom: -10rem;
     padding-left: 5rem;
-    font-weight: normal;
+    font-weight: lighter;
     color: rgb(78, 78, 78);
     font-size: 30px;
 }
 
-#tracinho{
-    padding-bottom: rem;
-}
 
 .botao{
     width: 200px;
     height: 50px;
     text-align: center;
+    font-weight: lighter;
     font-size: 16px;
     color: solid #ccc;
     background-color: white;
@@ -127,4 +138,270 @@ padding: 0.25em 5em
 .botao:hover{
     cursor: pointer;
     background-color: rgba(61, 61, 61, 0.021);
+}
+
+.titulo2{
+    font-weight: lighter;
+    color: #636363;
+    padding-bottom: 0rem;
+    font-size: 30px;
+    
+}
+
+#icone1{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(235, 137, 153);
+    position: relative;
+    right: 2.5rem;
+}
+
+#icone1::before{
+    line-height: 240px;
+    display: inline-block;
+    font-size: 100px;
+    border: 1px solid #ccc;
+    height: 240px;
+    width: 240px;
+    border-radius: 100%;
+}
+
+#icone2{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(155, 125, 238);
+}
+
+#icone2::before{
+    line-height: 240px;
+    display: inline-block;
+    font-size: 100px;
+    border: 1px solid #ccc;
+    height: 240px;
+    width: 240px;
+    border-radius: 100%;
+}
+
+#icone3{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(131, 204, 204);
+    position: relative;
+    left: 2.5rem;
+}
+
+#icone3::before{
+    line-height: 240px;
+    display: inline-block;
+    font-size: 100px;
+    border: 1px solid #ccc;
+    height: 240px;
+    width: 240px;
+    border-radius: 100%;
+}
+
+#icone1_titulo{
+    font-weight: lighter;
+    color: #636363;
+    padding-bottom: 0rem;
+    font-size: 20px;
+}
+
+#icone1_texto::before{
+    display: inline-block;
+}
+#icone1_texto{
+    font-weight: lighter;
+    color: #636363;
+    padding-bottom: 0rem;
+    font-size: 16px;
+}
+
+#icone1_texto::before{
+    display: inline-block;
+}
+
+#icone2_titulo{
+    font-weight: lighter;
+    color: #636363;
+    padding-bottom: 0rem;
+    font-size: 20px;
+}
+
+#icone2_texto::before{
+    display: inline-block;
+}
+#icone2_texto{
+    font-weight: lighter;
+    color: #636363;
+    padding-bottom: 0rem;
+    font-size: 16px;
+}
+
+#icone2_texto::before{
+    display: inline-block;
+}
+
+#icone3_titulo{
+    font-weight: lighter;
+    color: #636363;
+    padding-bottom: 0rem;
+    font-size: 20px;
+}
+
+#icone3_titulo::before{
+    display: inline-block;
+}
+#icone3_texto{
+    font-weight: lighter;
+    color: #636363;
+    padding-bottom: 0rem;
+    font-size: 16px;
+}
+
+#icone3_texto::before{
+    display: inline-block;
+}
+
+.lista-icones{
+    margin: 0;
+    list-style: none;
+    
+}
+
+.lista-icones h3{
+    font-size: 250%;
+    font-weight: normal;
+
+}
+
+#button2{
+    position: relative;
+    left: 28rem;
+}
+
+#button3{
+    position: relative;
+    left: 30rem;
+}
+
+#subtitulo3{
+    color: #636363;
+    font-size: 1.25em;
+    letter-spacing: -0.025em;
+    font-weight: lighter;
+}
+
+.grafico{
+    text-align: center;
+    margin: 10%;
+    font-size: 120%;
+
+}
+
+.grafico h1{
+    text-align: center;
+    font-size: 250%;
+    font-weight: normal;
+
+}
+
+.grafico p{
+    font-size: 150%;
+
+}
+.lista-grafico{
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+.grafico ul{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    color: white;
+}
+
+.grafico li{
+    list-style: none;
+    float: left;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    width: 9.1rem;
+    height: auto;
+    position: relative;
+    bottom: 3.5rem;
+}
+
+.lista-grafico ul li strong{
+    font-weight: lighter;
+    font-size: 24px;
+    letter-spacing: -0.025;
+    margin: 0%;
+}
+
+.lista-grafico ul li p{
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 0%;
+}
+
+.lista-grafico ul li i{
+    font-size: 250%;
+    color: white;
+}
+
+.conteudo{
+    display: inline-block;
+}
+
+#etiam{
+    background-color: #efa8b0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+#magna{
+    background-color: #c79cc8;
+}
+
+#tempus{
+    background-color: #a89cc8;
+}
+
+#aliquam{
+    background-color: #9bb2e1;
+}
+
+#nullam{
+    background-color: #8cc9f0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.texto-lista2{
+    font-weight: lighter;
+    color: #636363;
+    padding-bottom: 0rem;
+    font-size: 16px;
+    display: flex;
+    text-align: justify;
+}
+
+#lista2{
+    list-style: none;
+}
+
+.lista2 ul li {
+    display: inline;
 }
