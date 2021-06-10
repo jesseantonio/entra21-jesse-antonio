@@ -1,0 +1,21 @@
+.texto-geral{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    color: #696969;
+    font-weight: 300;
+    line-height: 2.25em;
+}
+
+.titulo1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.35em;
+    margin: 0 0 1em 0;
+    color: #444;
+    font-weight: 800;
+}
+
+.subtitulo-conteudo-inicial{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    color: #696969;
+}
