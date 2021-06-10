@@ -8,11 +8,12 @@ body{
     background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 }
 #titulo{
-    font-size: 50px;
+    font-size: 3.25em;
     color: white;
     font-weight: lighter;
 }
 #subtitulo{
+    color: rgba(255, 255, 255, 0.65);
     font-size: 1.25em;
     font-weight: lighter;
     letter-spacing: 0;
@@ -20,6 +21,7 @@ body{
     
 }
 #link{
+    color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
     border-bottom: dotted 2px;
     position: inherit;
@@ -27,6 +29,7 @@ body{
 }
 #link:hover{
     border-bottom: none;
+    border-color: color rgba(255, 255, 255, 0.65);
     background-color: unset;
 }
 nav{
@@ -119,6 +122,7 @@ font-weight: lighter;
 
 
 .botao{
+    
     width: 200px;
     height: 50px;
     text-align: center;
@@ -144,7 +148,7 @@ font-weight: lighter;
     font-weight: lighter;
     color: #636363;
     padding-bottom: 0rem;
-    font-size: 30px;
+    font-size: 2em;
     
 }
 
@@ -294,6 +298,12 @@ font-weight: lighter;
     left: 30rem;
 }
 
+#button4{
+    position: relative;
+    left: 37.5rem;
+}
+
+
 #subtitulo3{
     color: #636363;
     font-size: 1.25em;
@@ -404,4 +414,55 @@ font-weight: lighter;
 
 .lista2 ul li {
     display: inline;
+}
+
+.botao-azul{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #8cc9f0;
+    position: absolute;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border: none; 
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+#button5{
+    left: 29rem;
+}
+
+.botao-azul:hover{
+    cursor: pointer;
+}
+
+.botao-footer{
+    
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ffffff !important;
+    position: absolute;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    
+}
+
+.botao-footer{
+    cursor: pointer;
+}
+
+.footer #titulo-footer #titulo2-footer{
+display: inline-block;
 }
