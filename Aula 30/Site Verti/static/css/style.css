@@ -1,6 +1,6 @@
 .texto-geral{
     font-family: 'Open Sans', sans-serif;
-    font-size: 13pt;
+    font-size: 14.6667px;
     color: #696969;
     font-weight: 300;
     line-height: 2.25em;
@@ -16,6 +16,54 @@
 
 .subtitulo-conteudo-inicial{
     font-family: 'Open Sans', sans-serif;
-    font-size: 13pt;
+    font-size: 14.6667px;
     color: #696969;
+}
+
+.link-main{
+    color: #0090c5;
+}
+
+.link-main:hover{
+    text-decoration: none;
+}
+
+.lista-footer{
+    list-style: none;
+}
+
+#texto-anonimo-footer:hover{
+    cursor: default;
+}
+
+#titulo-container2-main{
+    font-family: 'Open Sans', sans-serif;
+    
+    color:inherit;
+    font-size: 2.25em;
+    margin: 0px 0px 36.3px;
+    font-weight: 800;
+    line-height: 1em;
+}
+
+.texto-final-footer{
+    font-family: 'Open Sans', sans-serif;
+    color: #AAAAAA;
+    font-size: 14.6667px;
+}
+
+#link-final-footer:hover{
+    text-decoration: none;
+}
+
+#logo-header{
+    font-size: 200px;
+    
+}
+
+#html{
+    color: #696969;
+    font-size: 14.6667px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
 }
