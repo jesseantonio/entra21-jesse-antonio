@@ -1,14 +1,258 @@
 body {
     background-image: url(https://html5up.net/uploads/demos/strata/images/bg.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
+    
 }
 header{
-    
+    text-align: center;
+    bottom: 200px;
 }
 main{
 background-color: white;
 }
 
+.main{
+    background-color: white;
+}
 
+*{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+#iam{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+
+#resto{
+    font-size: 20px;
+    color: #FFFFFF80;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+
+#link{
+    font-size: 20px;
+    color: #FFFFFF80;
+    font-weight: 400;
+    line-height: 1.75em;
+    border-bottom: dotted 2px;
+    text-decoration: none;
+}
+
+#link:hover{
+    color: #3cb371;
+    border-bottom: none;
+}
+
+#avatar{
+    width: 30%;
+    border-radius: 100%;
+}
+
+#titulo-main{
+    font-size: 21.6px;
+    color: #787878;
+    font-weight: 100;
+    line-height: 1.5em;
+    padding-left: 1.1rem;
+}
+
+#texto-main{
+    font-size: 14.9px;
+    color: #a2a2a2;
+    font-weight: 400;
+    line-height: 1.75em;
+    padding-left: 1.1rem;
+}
+
+.botao{
+    width: 315px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #787878;
+    cursor: pointer;
+    font-size: 14.9px;
+    padding: 0 1.5em;
+}
+
+.botao:hover{
+    color: #3cb371;
+    border-color: #3cb371;
     
+}
+
+#titulo2-main{
+    font-size: 19.2px;
+    color: #787878;
+    font-weight: 200;
+    line-height: 1.5em;
+    padding-left: 1.1rem;
+}
+
+#subtitulo2-main{
+    font-size: 16px;
+    color: #787878;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding-left: 1.1rem;
+}
+
+#texto-dentro{
+    font-size: 12.8px;
+    color: #a2a2a2;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding-left: 1.1rem;
+}
+
+#subtitulo-section{
+    font-size: 16px;
+    color: #a2a2a2;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding-left: 1.1rem;
+}
+
+#name{
+    width: 295px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #787878;
+    font-size: 15.5px;
+    font-weight: 400;
+    line-height: 2.75em;
+    text-align: start;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#name:focus{
+    border-color: #3cb371;
+    outline: 0;
+}
+#email{
+    width: 295px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #787878;
+    font-size: 15.5px;
+    font-weight: 400;
+    line-height: 2.75em;
+    text-align: start;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#email:focus{
     
+    border-color: #3cb371;
+    outline: 0;
+    
+}
+#message{
+    width: 310px;
+    height: 80px;
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #787878;
+    font-size: 15.5px;
+    font-weight: 400;
+    line-height: 2.75em;
+    text-align: start;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#message:focus{
+    border-color: #3cb371;
+    outline: 0;
+}
+#lista-fim{
+    list-style-type: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.itens-lista{
+    font-size: 16px;
+    color: #a2a2a2;
+    font-weight: 400;
+    line-height: 1.5em;
+    
+}
+
+.icones-lista{
+    position: relative;
+    padding-right: 20px;
+    margin-left: 1em;
+}
+#link-fim{
+    font-size: 16px;
+    color: #a2a2a2;
+    font-weight: 400;
+    line-height: 1.5em;
+    border-bottom: dotted 2px;
+    text-decoration: none;
+}
+
+#link-fim:hover{
+    color: #3cb371;
+    border-bottom: none;
+}
+
+.imagens-main{
+    align-items: center;
+    width: 90%;
+    border-radius: 0.5rem;
+}
+footer{
+        background-image: url(https://html5up.net/uploads/demos/strata/images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+        background-position: top left, bottom center;
+        text-align: center;
+}
+
+#header-footer{
+    text-align: center;
+    bottom: 200px;
+}
+
+#lista-footer{
+   list-style: none;
+}
+
+.texto-footer{
+    font-size: 12.8px;
+    color: #FFFFFF66;
+    line-height: 2.3em;
+}
+
+#link-footer{
+    font-size: 12.8px;
+    color: #FFFFFF66;
+    line-height: 2.3em;
+    font-weight: 400;
+    line-height: 1.75em;
+    border-bottom: dotted 2px;
+    text-decoration: none;
+}
+
+#link-footer:hover{
+    color: #3cb371;
+    border-bottom: none;
+}
+
