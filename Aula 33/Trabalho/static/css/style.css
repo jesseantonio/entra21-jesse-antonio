@@ -1,10 +1,12 @@
 body{
     font-family: "Libre Franklin", sans-serif;
     color: #444;
+    margin: 0;
 }
 
+
 header {
-    background-image: url(../img/video.gif);
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/video.gif);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -12,6 +14,7 @@ header {
 
 
 #titulo-header{
+    
     color: #ffffff;
     font-weight: bold;
     letter-spacing: 1px;
@@ -62,6 +65,10 @@ header {
     padding: 2px 5px;
 }
 
+.botao:hover{
+    cursor: pointer;
+}
+
 #botao-escrita{
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
@@ -80,4 +87,94 @@ text-decoration: none;
 
 #para-viajar{
     color: #ffffff;
+}
+
+#titulo-main{
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-align: center;
+    transition: 0.1s ease all;
+}
+
+#texto-main{
+    font-family: "Montserrat", sans-serif;
+    color: #444444;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+section{
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://th.bing.com/th/id/Rc9a31966dab659e8d3d7bf186aa4443a?rik=NwUgPafuO%2fCcCA&pid=ImgRaw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#titulo-section{
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-align: center;
+    transition: 0.1s ease all;
+}
+
+#texto-section{
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+#titulo-lugares{
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 1.3px;
+    text-align: center;
+    transition: 0.1s ease all;
+}
+
+.imagens{
+        align-items: center;
+        width: 350px;
+        height: 30%;
+}
+
+footer{
+    background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#lista-footer{
+    list-style: none;
+}
+
+#texto-footer{
+    font-family: "Montserrat", sans-serif;
+    color: #78787F;
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 16px;
+}
+
+#meunome{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#retiralink{
+    text-decoration: none;
 }

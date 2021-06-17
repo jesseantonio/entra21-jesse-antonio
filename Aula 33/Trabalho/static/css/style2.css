@@ -1,0 +1,46 @@
+#titulo-main{
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-align: center;
+    transition: 0.1s ease all;
+}
+
+#texto-main{
+    font-family: "Montserrat", sans-serif;
+    color: #444444;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+.botao{
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 0px 28px;
+}
+
+#botao-escrita{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+}
+
+#link-botao{
+text-decoration: none;
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+#minhafoto{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+}
