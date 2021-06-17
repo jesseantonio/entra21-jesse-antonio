@@ -16,6 +16,7 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
     font-family: "Montserrat", sans-serif;
+    
 }
 
 .video {
@@ -27,17 +28,19 @@ header {
 }
 
 #titulo-geral{
-    color: #ffffff;
-    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #e6e6e6;
+    font-size: 30px;
     line-height: 1.4;
-    font-weight: 200;
+    font-weight: lighter;
     letter-spacing: -1px;
     text-align: center;
+    transition: 0.1s ease all;
 }
 
 #subtitulo-geral{
-    color: #ffffff;
-    font-size: 16px;
+    color: #e6e6e6;
+    font-size: 18px;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: -1px;
@@ -51,4 +54,30 @@ header {
 
 #lista-nav li {
     display: inline-block;
+}
+
+.botao{
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 2px 5px;
+}
+
+#botao-escrita{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#link-botao{
+text-decoration: none;
+}
+
+#home{
+    color: #ffffff;
+}
+
+#para-viajar{
+    color: #ffffff;
 }
