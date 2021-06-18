@@ -148,7 +148,7 @@ section{
 
 .imagens{
         align-items: center;
-        width: 350px;
+        width: 360px;
         height: 30%;
 }
 
@@ -178,4 +178,16 @@ footer{
 
 #retiralink{
     text-decoration: none;
+}
+
+#subtitulo-conteudo{
+    color: #78787F;
+    font-size: 13px;
+    margin: 2%;
+    line-height: 1.5;
+}
+
+#titulo-conteudo{
+    margin: 2%;
+    line-height: 1.5;
 }

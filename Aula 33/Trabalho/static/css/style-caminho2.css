@@ -6,10 +6,10 @@ body{
 
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/video.gif);
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/machupichu.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
+    margin: 0px 0px 0px 0px;
 }
 
 
@@ -33,17 +33,18 @@ header {
 #titulo-geral{
     font-family: "Montserrat", sans-serif;
     color: #e6e6e6;
-    font-size: 30px;
+    font-size: 42px;
     line-height: 1.4;
     font-weight: lighter;
-    letter-spacing: -1px;
+    letter-spacing: 1.2px;
     text-align: center;
     transition: 0.1s ease all;
+    padding-bottom: 0;
 }
 
 #subtitulo-geral{
     color: #e6e6e6;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: -1px;
@@ -62,7 +63,7 @@ header {
 .botao{
     border: 2px solid #fff;
     background-color: transparent;
-    padding: 2px 5px;
+    padding: 0px 28px;
 }
 
 .botao:hover{
@@ -109,7 +110,7 @@ text-decoration: none;
 }
 
 section{
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://th.bing.com/th/id/Rc9a31966dab659e8d3d7bf186aa4443a?rik=NwUgPafuO%2fCcCA&pid=ImgRaw);
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://lh3.googleusercontent.com/proxy/yW-mwfEN9HPQEMtXebbhLxM1SLNa6FUzcaOSxB5mt1b5GLGDKvtWjeKwEYn0GRBVmAphqJ5Ek2CiWA-JPdigpj8_7OLsQ20vxxEY9KIM6a4ADwFEKLy0i5Qflgoe8fcWbfaI2JA7-mo);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -155,7 +156,7 @@ footer{
     background: black;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
+    text-align: center;
 }
 
 #lista-footer{
@@ -179,6 +180,14 @@ footer{
     text-decoration: none;
 }
 
-#machupicchu:hover{
-    color: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4))
+#subtitulo-conteudo{
+    color: #78787F;
+    font-size: 13px;
+    margin: 2%;
+    line-height: 1.5;
+}
+
+#titulo-conteudo{
+    margin: 2%;
+    line-height: 1.5;
 }
