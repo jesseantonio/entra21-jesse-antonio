@@ -1,0 +1,195 @@
+body{
+    font-family: "Libre Franklin", sans-serif;
+    color: #444;
+    margin: 0;
+}
+
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://media.giphy.com/media/3oKIPDf1E4qKYRJ6oM/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 0px;
+    background-position: center;
+}
+
+
+#titulo-header{
+    
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.video {
+    height: -500x;
+    width: 1137.78px;
+    top: 0px;
+    opacity: 1;
+    left: -388.889px;
+}
+
+#titulo-geral{
+    font-family: "Montserrat", sans-serif;
+    color: #e6e6e6;
+    font-size: 42px;
+    line-height: 1.4;
+    font-weight: lighter;
+    letter-spacing: 1.2px;
+    text-align: center;
+    transition: 0.1s ease all;
+    padding-bottom: 0;
+}
+
+#subtitulo-geral{
+    color: #e6e6e6;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+#lista-nav{
+    display: inline;
+    list-style: none;
+}
+
+#lista-nav li {
+    display: inline-block;
+}
+
+.botao{
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 0px 28px;
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+#botao-escrita{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#link-botao{
+text-decoration: none;
+}
+
+#home{
+    color: #ffffff;
+}
+
+#para-viajar{
+    color: #ffffff;
+}
+
+#titulo-main{
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-align: center;
+    transition: 0.1s ease all;
+}
+
+#texto-main{
+    font-family: "Montserrat", sans-serif;
+    color: #444444;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+section{
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://s.zst.com.br/cms-assets/2021/01/carregamento-rapido-celular3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-position: center;
+}
+
+#titulo-section{
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-align: center;
+    transition: 0.1s ease all;
+}
+
+#texto-section{
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+#titulo-lugares{
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 1.3px;
+    text-align: center;
+    transition: 0.1s ease all;
+}
+
+.imagens{
+        align-items: center;
+        width: 360px;
+        height: 30%;
+}
+
+footer{
+    background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#lista-footer{
+    list-style: none;
+}
+
+#texto-footer{
+    font-family: "Montserrat", sans-serif;
+    color: #78787F;
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 16px;
+}
+
+#meunome{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#retiralink{
+    text-decoration: none;
+}
+
+#subtitulo-conteudo{
+    color: #78787F;
+    font-size: 13px;
+    margin: 2%;
+    line-height: 1.5;
+}
+
+#titulo-conteudo{
+    margin: 2%;
+    line-height: 1.5;
+}

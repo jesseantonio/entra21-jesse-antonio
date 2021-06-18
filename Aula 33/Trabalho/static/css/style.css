@@ -33,7 +33,7 @@ header {
 #titulo-geral{
     font-family: "Montserrat", sans-serif;
     color: #e6e6e6;
-    font-size: 30px;
+    font-size: 38px;
     line-height: 1.4;
     font-weight: lighter;
     letter-spacing: -1px;
@@ -179,6 +179,28 @@ footer{
     text-decoration: none;
 }
 
-#machupicchu:hover{
-    color: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4))
+#home1{
+    text-decoration: none;
+}
+
+#home:hover{
+    color: #e6e6e6;
+}
+
+#titulo11{
+    text-decoration: none;
+}
+
+#titulo-header:hover{
+    color: #e6e6e6;
+}
+
+
+
+#viajar{
+    text-decoration: none;
+}
+
+#para-viajar:hover{
+    color: #e6e6e6;
 }
