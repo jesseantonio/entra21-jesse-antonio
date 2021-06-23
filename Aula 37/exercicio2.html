@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <style>
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #div-legenda {
+                width: 300px;
+                height: 300px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>            
+        <div id="div-legenda">Adicione uma legenda nesse elemento</div>
+    </body>
+    <script>
+body = document.querySelector("body")
+body = body.getBoundingClientRect()
+
+divlegenda = document.querySelector("#div-legenda")
+divlegenda = divlegenda.getBoundingClientRect()
+
+    function mudarPosicao(body, divlegenda) {
+    let tudo = document.createElement("div")
+    tudo = body + divlegenda 
+
+    tudo.style.cssText = 
+
+    mensagem.style.left = coords.left + "px"
+    mensagem.style.top = coords.bottom + "px"
+
+    mensagem.innerHTML = html
+
+    return mensagem
+}  
+
+// Obtendo as coordenadas do elemento (levando em consideração o Scroll da tela)
+
+    </script>
