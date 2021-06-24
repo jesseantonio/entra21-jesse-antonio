@@ -1,0 +1,20 @@
+<ul>
+    <li id="li">Primeiro Item</li>
+    <li id="li">Segundo Item</li>
+    <li >Terceiro Item</li>
+    <li >Quarto Item</li>
+    <li>Quinto Item</li>
+</ul>
+<script>
+    
+    document.getElementById("li").addEventListener("click", function() {
+    this.style.backgroundColor = "red";
+    
+});
+let li = document.querySelector("li")
+        li.addEventListener("click", (event) => {
+            if (event.ctrlKey) {
+               li.style.backgroundColor = "red";
+            }
+        })
+</script>
