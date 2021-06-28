@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pre{
+            position: fixed;
+            margin: 0;
+        }
+
+        #pre:focus {
+            outline: 1px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <pre id="pre">
+        _   _
+        (q\_/p)
+         /. .\
+        =\_t_/=   __
+         /   \   (
+        ((   ))   )
+        /\) (/\  /
+        \  Y  /-'
+         nn^nn
+    </pre>
+
+    <script>
+        let rato = document.querySelector("#pre")
+        rato.tabIndex = 0
+        
+        rato.addEventListener("click", () => {        
+            rato.style.left = rato.getBoundingClientRect().left + "px"
+            rato.style.top = rato.getBoundingClientRect().top + "px"
+            rato.focus()
+        })
+
+        rato.addEventListener("keydown", (event) => {
+            console.log(event.key)
+            switch (event.key) {
+                case "ArrowRight":
+                    rato.style.left = parseInt(rato.style.left) + rato.clientWidth + "px"
+                    break
+                case "ArrowDown":
+                rato.style.top = parseInt(rato.style.top) + rato.clientHeight + "px"
+                    break
+                case "ArrowLeft":
+                rato.style.left = parseInt(rato.style.left) - rato.clientWidth + "px"
+                    break
+                case "ArrowUp":
+                rato.style.top = parseInt(rato.style.top) - rato.clientHeight + "px"
+                    break
+            }
+        })
+    </script>   
+</body>
+</html>

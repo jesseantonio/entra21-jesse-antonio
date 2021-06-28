@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCript>
+        function teclas(){
+	if(event.keyCode==37){
+		x=document.getElementById("simbolo");
+		var i = setInterval(function(){
+			x.style.left=(x.offsetLeft-10)+"px";
+		}, 50);
+		return direita();
+	}
+	if(event.keyCode==39){
+		x=document.getElementById("simbolo");
+		var i = setInterval(function(){
+			x.style.left=(x.offsetLeft+10)+"px";
+		}, 50);
+		return esquerda();
+	}
+}
+    </SCript>
+</body>
+</html>
