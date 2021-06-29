@@ -6,23 +6,43 @@
     <title>Document</title>
 </head>
 <body>
-    <SCript>
-        function teclas(){
-	if(event.keyCode==37){
-		x=document.getElementById("simbolo");
-		var i = setInterval(function(){
-			x.style.left=(x.offsetLeft-10)+"px";
-		}, 50);
-		return direita();
-	}
-	if(event.keyCode==39){
-		x=document.getElementById("simbolo");
-		var i = setInterval(function(){
-			x.style.left=(x.offsetLeft+10)+"px";
-		}, 50);
-		return esquerda();
-	}
-}
-    </SCript>
-</body>
+	<form>
+		<div>
+		  <label for="valorinicial">Digite o valor inicial</label>
+		  <input id="valorinicial" type="number" name="valorinicial" required>
+		</div>
+		<br>
+		<div>
+			<label for="qtdMeses">Digite a quantidade de Meses</label>
+			<input id="qtdMeses" type="number" name="qtdMeses" required>
+		  </div>
+		 <br> 
+		  <div>
+			<label for="porcentagem">Digite a porcentagem de juros</label>
+			<input id="porcentagem" type="number" name="porcentagem" required>
+		  </div>
+		 <br> 
+		  <div>
+		  <input id="resultado" type="submit" onclick="calcular()">
+		</div>
+
+	</form>
+	  <script>
+		let inicial1 = document.querySelector("#valorinicial");
+    	let juros1 = document.querySelector("#porcentagem");
+    	let anos1 = document.querySelector("#qtdMeses");
+		
+		  
+		  function calcular(){
+            let inicial = inicial1.value
+            let anos = anos1.value
+            let juros = juros1.value
+            
+			let resultado = Math.round(inicial * (1 + juros * anos))
+            alert(`Rendeu ${resultado} para você!`)
+        } 
+        	
+		
+	  </script>
+	</body>
 </html>

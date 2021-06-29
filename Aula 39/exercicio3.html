@@ -9,19 +9,42 @@
 <input id="valorinicial" placeholder="Valor Inicial" type="number" required>
 <br>
 <br>
+<button id="submit1" type="submit">Salvar</button>
+<br>
+<br>
 <input id="qtdMeses" placeholder="Quantidade de Meses" type="number" required>
 <br>
 <br>
-<input id="porcentagem" placeholder="Porcentagem ao Ano " type="number" required>       
+<button id="submit2" type="submit">Salvar</button>
+<br>
+<br>
+<input id="porcentagem" placeholder="Porcentagem ao Ano" type="number" required>       
+<br>
+<br>
+<button id="submit3" type="submit">Salvar</button>
+<br>
+<br>
+<button id="resultado" type="button">Resultado</button>
+
+
 <script>
-    let valor = document.querySelector("#valorinicial")
-    valor.addEventListener("keydown"), () => {
-        console.log(event.key)
-        if ("Enter") {
-            let valorSalvo = valor.value 
-        }
-    console.log(valorSalvo)
-    }
+    
+</script>
+
+
+<script> 
+    let inicial = document.querySelector("valorinicial");
+    let juros = document.querySelector("porcentagem");
+    let anos = document.querySelector("qtdMeses");
+    let resultado = document.querySelector('button');
+    
+    resultado.addEventListener("click", () => {        
+            let resultadoConta = Math.round(inicial * (1 + juros * anos)) 
+            alert(resultadoConta)
+            resultado.focus()
+        })
+
+
 </script>
 </body>
 </html>
