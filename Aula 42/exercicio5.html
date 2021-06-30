@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function segundosParaAmanha(){
+            let data = new Date(2012, 12, 1, 22, 00, 0)
+            console.log(data)
+            
+            let segundos = data.getSeconds()
+            let hora = data.getHours()
+            let minutos = data.getMinutes()
+
+            let hora1 = hora * 3600
+            let minutos1 = minutos * 60
+
+            let totalSegundos = minutos1 + hora1 + segundos
+
+            let segundosFaltando = 86400 - totalSegundos
+            console.log(segundosFaltando)
+        }
+    segundosParaAmanha()
+    </script>
+</body>
+</html>
+
+5) Crie uma função segundosParaAmanha() que retorna o número de segundos
+até o próximo dia.
+
+Exemplo: 23:00 -> segundosParaAmanha() == 3600

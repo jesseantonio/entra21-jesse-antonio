@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let comeco = 0
+        let fim = 5
+        
+        function imprimeNumeros(numero){
+        for (let i = comeco; i < fim; i++) {
+            let numero = console.log(i)    
+        }
+    }
+        
+
+        setTimeout(imprimeNumeros, 3000, comeco, fim) // Vai executar a função dizOi depois de 1 segundo
+    </script>
+</body>
+</html>
+
+1) Escreva a função imprimeNumeros(comeco, fim) que mostre um número a cada segundo, começando
+do comeco até o fim.
+
+Faça duas variantes da solução:
+1. Usando setInterval
+2. Usando setTimeout
