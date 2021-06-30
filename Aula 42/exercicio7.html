@@ -7,17 +7,14 @@
 </head>
 <body>
     <script>
-        let comeco = 0
-        let fim = 5
-        
-        function imprimeNumeros(numero){
-        for (let i = comeco; i < fim; i++) {
-            let numero = console.log(i)    
+        function imprimeNumeros(comeco, fim){
+            console.log(comeco)
+            comeco++
+            if (comeco <= fim)
+                setTimeout(() => imprimeNumeros(comeco, fim), 1000)
         }
-    }
         
-
-        setTimeout(imprimeNumeros, 3000, comeco, fim) // Vai executar a função dizOi depois de 1 segundo
+        console.log(imprimeNumeros(1, 5))
     </script>
 </body>
 </html>
