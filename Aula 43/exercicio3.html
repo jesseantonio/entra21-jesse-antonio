@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createItem() {
+	localStorage.setItem('nameOfItem', 'value'); 
+} 
+createItem() // Creates a item named 'nameOfItem' and stores a value of 'value'
+
+function getValue() {
+	return localStorage.getItem('nameOfItem');  
+} // Gets the value of 'nameOfItem' and returns it
+console.log(getValue()); //'value';
+    </script>
+</body>
+</html>

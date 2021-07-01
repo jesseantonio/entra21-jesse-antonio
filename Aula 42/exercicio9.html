@@ -6,8 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        
-    </script>
+    <div class="display">
+      <!--DISPLAY-->
+      <span id="minuto">00</span><span>:</span><span id="segundo">00</span>
+   
+  </div>
+   <input type="time" id="timerInicial" value="10:20">
+  <script>
+      console.log(timerInicial.value.split(":"))
+   
+      let segundos = 0;
+      let minutos = 0;
+    
+      function segundo(){
+          segundos++;
+          if(segundos==60){
+              minutos++;
+              segundos=0;
+              document.getElementById('minuto').innerHTML=minutos
+          }
+   
+          document.getElementById('segundo').innerHTML=segundos
+          
+      }
+   
+      setInterval(function(){ segundo() },1000)
+  </script>
+    
 </body>
 </html>
+
+3) Faça uma cronômetro através da função criaCronometro(tempo, callback) que receba o valor inicial através de um <input type="time"> 
+e dispare uma função callback quando o tempo acabar.
