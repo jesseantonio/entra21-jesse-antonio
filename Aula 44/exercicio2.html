@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          class Pessoa {
+                constructor(nome, telefone) { 
+                    this.nome = nome
+                    this.telefone = telefone
+            }
+          }
+          
+          
+          class Agenda {
+            
+            constructor() {
+                this.listaPessoas = []
+            }
+
+            
+            armazenaPessoa(nome, telefone) { 
+                if (this.listaPessoas.length < 10) {
+                this.listaPessoas.push(new Pessoa(nome, telefone))    
+                }
+                else{
+                    console.log("Número máximo atingido")
+                }
+            }
+
+            listarPessoas(listaPessoas) {
+                for (let pessoa of this.listaPessoas) {
+                    console.log(`Nome: ${pessoa.nome}| Telefone: ${pessoa.telefone}`)
+                }
+                listarPessoas()
+            }
+
+            removePessoa(nome){
+                for (let x = 0; x<(this.listaPessoas.length); x+=1){
+                    if (nome == this.listaPessoas[x].nome){
+                        this.listaPessoas.splice(x,1)
+                        return
+                    }
+                }
+            }
+
+            buscaPessoa(nome){
+
+            }
+            imprimeAgenda(){
+
+            }
+            imprimePessoa(indice){
+
+            }
+        }
+        let pessoa1 = new Pessoa("Jessé", 9),
+            pessoa2 = new Pessoa("Jessé", 3123321)
+        
+        let agenda = new Agenda()
+            agenda.armazenaPessoa(pessoa1)
+            agenda.armazenaPessoa(pessoa2)
+    </script>
+</body>
+</html>
+
+2) Crie uma classe Agenda que pode armazenar 10 pessoas e que seja capaz de realizar as 
+seguintes operações:
+- armazenaPessoa(nome, telefone)
+- removePessoa(nome)
+- buscaPessoa(nome) -> Informa o número de telefone da pessoa
+- imprimeAgenda() -> Imprime os dados de todas as pessoas da agenda
+- imprimePessoa(indice) -> Imprime os dados da pessoa que está na posição "i" da agenda

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   class Pessoas {
+            constructor(nome, telefone) {
+                this.nome = nome
+                this.telefone = telefone
+            }
+ 
+        }
+ 
+        class Agenda {
+                listaPessoas = []
+            
+ 
+            armazenaPessoa(pessoa) {
+ 
+                if (this.listaPessoas.length <= 10) {
+                    this.listaPessoas.push(pessoa)
+ 
+                }
+                else {
+                   alert("cancela")
+                }
+            }
+ 
+            imprimeAgenda() {
+                for (let pessoa of this.listaPessoas) {
+                    console.log(`Nome: ${pessoa.nome} | Telefone: ${pessoa.telefone}`)
+                }
+            }
+ 
+            removePessoa(nome){
+                for (let x = 0; x<(this.listaPessoas.length); x+=1){
+                    alert(x)
+                    if (nome == this.listaPessoas[x].nome){
+                        this.listaPessoas.splice(x,1)
+                        return
+                    }
+                }
+            }
+ 
+            buscaPessoa(nome){
+                for (let pessoa of this.listaPessoas){
+                    if (nome == pessoa.nome){
+                        console.log(`${pessoa.nome} : ${pessoa.telefone}`)
+                    }
+                }
+            }
+ 
+            listarPessoas() {
+                for (let pessoa of this.listaPessoas) {
+                    console.log(`Nome: ${pessoa.nome}`)
+                }
+            }
+        }
+ 
+let usuario1 = new Pessoas("joao", "22222")
+let usuario2 = new Pessoas("ana", "22222")
+ 
+        let agenda = new Agenda()
+        agenda.armazenaPessoa(usuario1)
+        agenda.armazenaPessoa(usuario2)
+        
+        agenda.imprimeAgenda()
+    
+    
+    </script>
+</body>
+</html>
