@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Imovel {
+            constructor(endereco, preco) {
+                this.endereco = endereco
+                this.preco = preco
+            }
+        }
+
+        class Novo extends Imovel{
+            #valorAdicional
+
+            constructor(preco, endereco, valorAdicional){
+                super(preco, endereco)
+                this.#valorAdicional = valorAdicional
+             
+            }
+            
+            get valorAdicional() {
+                return this.#valorAdicional
+            }
+
+            set valorAdicional(valor) {
+                this.#valorAdicional = valor
+            }
+        
+            calculaTotal(){     
+                let resultado = this.preco + this.#valorAdicional
+                console.log(resultado)
+            }
+        }
+
+        class Velho extends Imovel{
+            #desconto
+            
+            constructor(preco, endereco, desconto){
+                super(preco, endereco)
+                this.#desconto = desconto
+             
+            }
+            
+            get desconto() {
+                return this.#desconto
+            }
+
+            set desconto(valor) {
+                this.#desconto = valor
+            }
+        
+            calculaTotal(preco, desconto){     
+                let resultado = this.preco - this.#desconto
+                console.log(resultado)
+            }
+        }
+        let usuario = new Imovel("BH", 123)
+        let usuario2 = new Velho(111, "SC", 11)
+        let usuario3 = new Velho(10, "PR", 10)
+    </script>
+</body>
+</html>
+3) Crie a classe Imovel, que possui um endereço e um preço.
+        a. crie uma classe Novo, que herda Imovel e possui um adicional no preço. Crie
+        métodos de acesso e impressão deste valor adicional.        
+        b. crie uma classe Velho, que herda Imovel e possui um desconto no preço. Crie
+        métodos de acesso e impressão para este desconto.
+        
+        Ambas as classes Novo e Velho devem implementar um método calculaTotal() que informa
+        o valor com o adicional ou com o desconto.

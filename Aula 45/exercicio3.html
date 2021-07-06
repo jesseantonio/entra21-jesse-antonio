@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hamster = {
+            estomago:[],
+ 
+            comer(comida) {
+                this.estomago.push(comida)
+            }
+        }
+ 
+        let hamtaro = {
+            __proto__:hamster,
+            estomago:[]
+        }
+ 
+        let fofuxo = {
+            __proto__:hamster,
+            estomago:[]
+        }
+        
+        hamtaro.comer("Maçã")
+        console.log(hamtaro.estomago)
+        console.log(fofuxo.estomago)
+    </script>
+</body>
+</html>
+3) Nesse problema temos dois hamster: Hamtaro e Fofuxo. Os dois herdam do objeto hamster.
+        Quando alimentamos um deles, o outro também fica cheio. Por que? Como consertar isso?
+        
+        
