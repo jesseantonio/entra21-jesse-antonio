@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dobrarEm5Segundos(numero, cb){
+            setTimeout(() => {
+                if (typeof numero == "number") {
+                    cb(null, numero * 2 )
+                }
+                else {
+                    cb(new Error("Não é um numero"))
+                }
+            }, 5000);
+        }
+
+        function callback(error, result){
+            if (error) {
+               console.log(`A operação falhou! ${error}.`)
+           } 
+           else{
+            console.log(`A operação foi bem sucedida! O resultado é ${result}.`)
+           }
+        }
+    </script>
+</body>
+</html>
+2) Crie uma função dobrarEm5Segundos(numero, cb) que dobre o valor de um número após 5 segundos. Se o valor recebido não for um número
+        ele irá chamar a cb passando um erro. 
+
+        callback(error, result) => Se um erro for passado irá mostrar a mensagem: "A operação falhou! [mensagem do erro]".
+        Senão, irá mostrar a mensagem: "A operação foi bem sucedida! O resultado é [result]".

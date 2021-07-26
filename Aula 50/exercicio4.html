@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numero = prompt("Digite um número")
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (typeof numero == "number") {
+                    resolve(numero * 2)
+                }
+                else {
+                    reject(new Error("Não é um numero"))
+                }
+            }, 5000)
+        })
+
+        dobrarEm5Segundos(numero)
+            .then(result => console.log(`A operação foi bem sucedida! O resultado é ${result}.`))
+            .catch(error => console.log(`A operação falhou! ${error.message}.`))
+
+    </script>
+</body>
+
+</html>
