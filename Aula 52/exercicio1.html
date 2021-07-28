@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function pegarPersonagens() {
+            let response = await fetch("https://rickandmortyapi.com/api/character")
+            
+            if(!response.ok){
+                return console.log("A requisição falhou")
+            }
+            let char = await response.json()
+            
+            return (char.info.count)
+        }
+            pegarPersonagens();
+        
+    </script>
+</body>
+</html>
+2) Implemente um script que consuma a api: https://rickandmortyapi.com/.
+        
+        * Crie uma página que carregue 9 personagens aleatórios e os mostre em cards.
+        * Crie uma página que permita selecionar um episódio e mostra todos os personagens que fizeram parte daquele episódio.       
+        * Crie uma página que mostre todos os Ricks que estão vivos.
+        */

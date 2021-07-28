@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+select{
+    cursor: pointer;
+    padding: 10px;
+}
+.a{
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+#tudo{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 1%;
+}
+</style>
+<body>
+    <center>
+    <div id="tudo">
+        <select class="a" name="breed" id="breed"></select>
+    </div>
+    
+    <div class="imagens">
+
+    </div>
+</center>
+    <script>
+        let select = document.querySelector("select")
+        select.addEventListener("change", () => {
+            select.innerHTML = ""
+            submit()
+        })
+
+        function submit() {
+            let select = document.querySelector("#breed")
+            localStorage.setItem("raca", JSON.stringify(select.value))
+            
+            location.reload()
+        }
+
+        async function getCat() {
+            let breeds = await fetch("https://api.thecatapi.com/v1/breeds", {
+                headers: {
+                    "x-api-key": "ea2c9cfc-5fe7-46fa-adf1-9c741d90259a"
+                }
+            })
+            if (!breeds.ok) {
+                return console.log("A requisição falhou!")
+            }
+            let b = await breeds.json(),
+                select = document.querySelector("#breed")
+            select.style.width = "200px"
+            for (let i of b) {
+                let n = document.createElement("option")
+                n.value = i.id
+                n.innerHTML = i.name
+                select.appendChild(n)
+            }
+
+            for (let i = 1; i <= 10; i++) {
+                let url1 = "https://api.thecatapi.com/v1/images/search?breed_ids=" + JSON.parse(localStorage.getItem("raca"))
+                let response = await fetch(url1, {
+                    headers: {
+                        "x-api-key": "ea2c9cfc-5fe7-46fa-adf1-9c741d90259a"
+                    }
+                });
+
+                if (!response.ok) {
+                    return console.log("A requisição falhou!")
+                }
+
+                let body = await response.json();
+
+                createCatImage(body[0].url);
+
+                function createCatImage(url) {
+                    const img = document.createElement("img");
+                    img.src = url;
+                    img.style.width = "400px"
+                    img.style.height = "300px"
+                    img.style.margin = "30px"
+                    
+                    document.body.append(img);
+                }
+            }
+        }
+
+        getCat();
+    </script>
+</body>
+
+</html>

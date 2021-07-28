@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        async function getChars() {
+            let response = await fetch("https://rickandmortyapi.com/api/character")
+
+            if (!response.ok) {
+                return console.log("A requisição falhou")
+            }
+            let char = await response.json()
+
+            return char.info.count
+        }
+
+        function sorteia(max) {
+            return Math.floor(Math.random() * max + 1)
+        }
+
+        async function getChar(id) {
+            let response = await fetch("https://rickandmortyapi.com/api/character/" + id)
+            if (!response.ok) {
+                return console.log("A requisição falhou")
+            }
+            let char = await response.json()
+            return char
+        }
+
+        function imprime(personagem) {
+            let img = document.createElement("img"),
+                cont = document.querySelector(".container")
+                
+                img.src = personagem.image
+            cont.appendChild(img)
+        }
+
+        for (let i = 1; i < 10; i++) {
+            getChars().then(result => {
+                getChar(sorteia(result)).then(result => {
+                    imprime(result)
+                })
+            })
+        }
+
+    </script>
+</body>
+
+</html>

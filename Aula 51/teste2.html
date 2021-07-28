@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
     <title>Document</title>
 </head>
-
 <body>
-    
-    <style>
-        button{
-            font-size: 40px;
-            position: absolute;
-        }
-    </style>
-    <button onclick="vezes(getCat)">GIFS</button>
+    <select id="opcoes">
+        <option value="aegean">Aegean</option>
+        <option value="bambino">Bambino</option>
+        <option value="bengal">Bengal</option>
+    </select>
     <script>
-        async function char() {
-            let response = await fetch("https://rickandmortyapi.com/api/character", {
+        const select = document.querySelector("#opcoes");
 
-            })
+        const indice = select.selectedIndex
+ 
+            async function getCat() {
+            let response = await fetch("https://api.thecatapi.com/v1/images/search", {
+                headers: {
+                    "x-api-key": "ea2c9cfc-5fe7-46fa-adf1-9c741d90259a"
+                }
+            });
 
             if (!response.ok) {
                 return console.log("A requisição falhou!")
             }
 
-            
+            let body = await response.json();
 
             createCatImage(body[0].url);
         }
@@ -36,12 +36,10 @@
             const img = document.createElement("img");
 
             img.src = url;
-            img.style.width = "400px"
-            img.style.height = "300px"
-            img.style.margin = "30px"
+
             document.body.append(img);
         }
-        function vezes(getCat){
+
         getCat();
         getCat();
         getCat();
@@ -52,9 +50,8 @@
         getCat();
         getCat();
         getCat();
-        }
         
+        console.log(indice)
     </script>
 </body>
-
 </html>

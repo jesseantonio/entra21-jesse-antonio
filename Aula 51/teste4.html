@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        async function getCatsBreeds() {
+
+            let response = await fetch(`https://api.thecatapi.com/v1/breeds`, {
+                headers: {
+                    "x-api-key": "ea2c9cfc-5fe7-46fa-adf1-9c741d90259a"
+                }
+            })
+
+            let body = await response.json();
+
+            let catNames = []
+
+            for (let item of body) {
+                catNames.push(item.name)
+            }
+            return catNames
+
+        }
+
+        async function pushCatsBreeds() {
+            names = await getCatsBreeds()
+            for (let name of names) {
+                document.querySelector(".catsbreeds").insertAdjacentHTML("beforeend", `<option>${name}</option>`)
+            }
+        }
+        pushCatsBreeds()
+        let select = document.querySelector("select")
+        select.addEventListener("change",() => {
+            select.innerHTML = ""
+            submit()
+            function submit(){
+            let select = document.querySelector("#breed")
+            localStorage.setItem("raca", JSON.stringify(select.value))
+            
+            location.reload()
+        }
+        })
+        
+    </script>
+<select class="catsbreeds" name=""></select>
+
+</body>
+
+</html>
