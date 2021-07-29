@@ -8,8 +8,10 @@
 </head>
 
 <body>
-    <div class="container">
-
+    <div class="container"></div>
+        <html>
+            </body>
+            </html>  
     </div>
     <script>
         async function getChars() {
@@ -39,9 +41,11 @@
         function imprime(personagem) {
             let img = document.createElement("img"),
                 cont = document.querySelector(".container")
-                
+                img.style.width = "200px"
                 img.src = personagem.image
             cont.appendChild(img)
+            let a = img.getAttribute('src')
+            console.log(img.getAttribute('src'))
         }
 
         for (let i = 1; i < 10; i++) {
