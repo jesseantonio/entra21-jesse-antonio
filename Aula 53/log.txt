@@ -1,0 +1,3 @@
+total_memory: 3975MB
+free_memory: 703MB
+usage: 17.68553459119497%
