@@ -1,12 +1,17 @@
-const { Pool } = require("pg");
+// const { Pool } = require("pg");
+const db = require("./db");
 const format = require("pg-format");
 
-const pool = new Pool({
-host: "localhost",
-user: "postgres",
-password: "123456",
-database: "node"
-});
+// postgres://usuario:senha@servidor:porta/banco_dados
+// const connectionString = "postgres://postgres:123456@localhost:5432/node";
+// const pool = new Pool({connectionString});
+
+// const pool = new Pool({
+// host: "localhost",
+// user: "postgres",
+// password: "123456",
+// database: "node"
+// });
 
 (async () => {
 // try {
@@ -56,20 +61,29 @@ database: "node"
 // pool.end();
 // }
 
+ // try {
+// const funcionarios = [
+// ["joão", "joão@email.com", "(47) 9 8888-8888"],
+// ["maria", "maria@email.com", "(47) 9 7777-7777"]
+// ];
+
+ // const query = format("INSERT INTO funcionarios (nome, email, telefone) VALUES %L RETURNING *", funcionarios);
+
+ // const res = await pool.query(query);
+
+ // console.log(res.rows);
+// } catch (error) {
+// console.log(error.message);
+// } finally {
+// pool.end();
+// }
+
  try {
-const funcionarios = [
-["joão", "joão@email.com", "(47) 9 8888-8888"],
-["maria", "maria@email.com", "(47) 9 7777-7777"]
-];
-
- const query = format("INSERT INTO funcionarios (nome, email, telefone) VALUES %L RETURNING *", funcionarios);
-
- const res = await pool.query(query);
-
- console.log(res.rows);
+const { rows } = await db.query("SELECT * FROM funcionarios WHERE nome ILIKE $1", ['p%']);
+console.log(rows);
 } catch (error) {
 console.log(error.message);
 } finally {
-pool.end();
+db.end();
 }
 })();
