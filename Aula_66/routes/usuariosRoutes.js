@@ -1,78 +1,20 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/:id", async (req, res) => {
-try {
-console.log(req.params);
-} catch (error) {
-console.log(error);
-res.status(400).json({ message: "Ocorreu um erro" });
-}
-});
+// Importando os controllers
+const usuariosControllers = require("../controllers/usuariosControllers");
 
-router.get("/", async (req, res) => {
-try {
-} catch (err) {
-console.log(error);
-res.status(400).json({ message: "Ocorreu um erro" });
-}
-});
+// Importando as validations
+const usuariosValidations = require("../validations/usuariosValidations");
 
-router.post("/", async (req, res) => {
-// Validar se o usuário já existe através do e-mail
-try {
-const usuario = await Usuario.create(req.body);
-res.status(201).json(usuario);
-} catch (err) {
-console.log(error);
-res.status(400).json({ message: "Ocorreu um erro" });
-}
-});
+router.get("/", usuariosControllers.getAll);
 
-router.delete("/:id", async (req, res) => {
-try {
-const usuario = await Usuario.findOne({
-where: {
-id: req.params.id
-}
-});
+router.get("/:id", usuariosValidations.get, usuariosControllers.getOne);
 
- if (!usuario) {
-return res.status(404).json({ message: "Usuário não foi encontrado!" });
-}
+router.post("/", usuariosValidations.post, usuariosControllers.create);
 
- await usuario.destroy();
+router.delete("/:id", usuariosControllers.remove);
 
- res.status(204).end();
-} catch (error) {
-console.log(error);
-res.status(400).json({ message: "Ocorreu um erro" });
-}
-});
-
-router.put("/:id", async (req, res) => {
-try {
-const usuario = await Usuario.findOne({
-where: {
-id: req.params.id
-}
-});
-
- if (!usuario) {
-return res.status(404).json({ message: "Usuário não foi encontrado!" });
-}
-
- const usuarioAtualizado = req.body;
-
- Object.assign(usuario, usuarioAtualizado);
-
- await usuario.save();
-
- res.json(usuario);
-} catch (error) {
-console.log(error);
-res.status(400).json({ message: "Ocorreu um erro" });
-}
-});
+router.put("/:id", usuariosValidations.put, usuariosControllers.update);
 
 module.exports = router;
