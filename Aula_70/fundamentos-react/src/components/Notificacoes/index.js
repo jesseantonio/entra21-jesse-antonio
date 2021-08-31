@@ -1,12 +1,12 @@
-export function Notificacoes(props){
+export function Notificacoes(props) {
     const notificacoes = props.mensagens || [];
-  
-    return(
+
+    return (
         <>
-        {
-            notificacoes.lenght > 0 &&
-        <p> Voce têm {props.mensagens.lenght} notificacoes</p>
-        }
+            {
+                notificacoes.lenght > 0 &&
+                <p> Voce têm {props.mensagens.lenght} notificacoes</p>
+            }
         </>
     );
 }

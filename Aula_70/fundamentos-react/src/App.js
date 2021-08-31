@@ -1,12 +1,17 @@
 import './App.css';
+import { Card } from './components/Card';
 import { ListaAlunos } from './components/ListaAlunos';
 import { ComProps } from './components/ComProps';
 import { PrimeiroComponente } from './components/PrimeiroComponente';
 import { Familia } from './components/Familia';
 import { MembroFamilia } from './components/MembroFamilia';
-import { Card } from './components/Card';
 import { ParOuImpar } from './components/ParOuImpar';
 import { Notificacoes } from './components/Notificacoes';
+import { ManipulandoEventos } from './components/ManipuladoEventos';
+import { Relogio } from './components/Relogio';
+import { ValorAleatorio } from './components/ValorAleatorio';
+import { ComponentesControlados} from './components/ComponentesControalados';
+import { Contador } from './components/Contador';
 
 
 function App() {
@@ -31,12 +36,24 @@ function App() {
             <MembroFamilia nome="José" />
           </Familia>
         </Card>
-        <Card>
+        <Card titulo ="Renderização">
           <ParOuImpar numero={10} />
           <ParOuImpar numero={5} />
+          <Notificacoes mensagens={["Oi!"]}/>
         </Card>
-      <Card>
-        <Notificacoes mensagens={["Oi!"]}/>
+      <Card titulo ="Manipulando eventos">
+        <ManipulandoEventos/>
+      </Card>
+      <Card titulo="State">
+        <Relogio/>
+        <hr/>
+        <ValorAleatorio max={100}/>
+      </Card>
+      <Card titulo="Componente controlado">
+      <ComponentesControlados/>
+      </Card>
+      <Card titulo="Testando contador">
+        <Contador inicial={10}/>
       </Card>
       </div>
     </div>
