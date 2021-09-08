@@ -1,0 +1,22 @@
+.menu{
+    display: inline;
+    list-style: none;
+}
+.menu .texto-nav{
+    display: inline-block;
+}
+.lista{
+    display: inline;
+    list-style: none;
+}   
+
+.menu .lista .texto-nav{
+    display: inline-block;
+}
+.decor{
+    text-decoration: none;
+    color: black;
+    margin: 15%;
+    padding-left: 10px;
+    font-size: 24px;
+}
