@@ -1,0 +1,12 @@
+.error {
+    color: red;
+    font-size: 22px;
+}
+form{
+    margin: 10px;
+}
+
+input{
+    margin: 5px;
+    font-size: 22px;
+}

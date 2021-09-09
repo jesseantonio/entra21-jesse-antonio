@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button{
+  font-size: 23px;
+}
+
+*{
+  background-image: url("https://vod-progressive.akamaized.net/exp=1631230095~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1757%2F7%2F183786499%2F604916434.mp4~hmac=352165952f023f3ef02eeadaf27d86cd66e707f8e2618347b835501700be8d1c/vimeo-prod-skyfire-std-us/01/1757/7/183786499/604916434.mp4?filename=Blue+-+5194.mp4");
+}
